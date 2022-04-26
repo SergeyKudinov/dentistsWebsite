@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.header {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid #F4F4F4;;
+}
+a {
+    text-decoration: none;
+}
+.header-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.tel a{
+    font-weight: 500;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 115px;
+}
+.header_img {
+
+}
+.address {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.about-clinic {
+}
+.tel {
+
+}
+
+
+
+.nav-text {
+    font-weight: 300;
+}
+.nav-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1180px;
+    height: 73px;
+    display: grid;
+    grid-template-columns: 1fr 75px 385px;
+    align-items: center;
+}
+.nav-left-content{
+    display: flex;
+    justify-content: space-between;
+}
+.services a{
+    font-weight: 300;
+}
+.services {
+}
+.prices {
+}
+.before-after {
+}
+.doctors {
+}
+.reviews {
+}
+.toPatients {
+}
+.fromOtherCities {
+}
+.nav-right-content {
+    grid-column-start: 3;
+    display: flex;
+    justify-content: space-between;
+}
+.soc_nets {
+    width: 94px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+.feedback {
+    width: 180px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid #2B2B2B;
+    border-radius: 2px;
+}
+.feedback a{
+    margin-top: 6.5px;
+    display: block;
+    text-align: center;
+    height: 100%;
+}
+.youtube_img{
+    width: 24px;
+    height: 17px;
+}
+.VK_img{
+    width: 19px;
+    height: 19px;
+}
+.inst_img{
+    width: 19px;
+    height: 19px;
+}
+
+
+.first-slider{
+}
+.swiper-wrapper {
+}
+.first-slider-slide {
+}
+.slide-header {
+}
+.slide-text {
+}
+.slide-link {
+}
+.slide-img {
+}
+.swiper-pagination {
+}
