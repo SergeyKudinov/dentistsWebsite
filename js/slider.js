@@ -1,14 +1,11 @@
-/* const swiper = new Swiper('.first-swiper', {
+const swiper = new Swiper('.first-slider', {
     slidesPerView: 1,
     spaceBetween: 40,
-    loop: true,
     pagination: {
-      el: '.first-swiper-pagination',
+      el: '.first-slider-pagination',
+      type: "bullets",
       clickable: true,
       dynamicBullets: true,
     },
-    centeredSlides: true,
     grabCursor: true,
-    initialSlide: 1,
-
-  }); */
+  });
