@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Стоматология мой вариант</title>
@@ -74,62 +80,67 @@
 
 
     <div class="first-slider">
-        <div class="swiper-wrapper">
-            <div class="first-slider-slide">
-                <div class="slide-header">
-                    Лечение зубов и десен
+        <div class="first-swiper">
+            <div class="first-swiper-wrapper swiper-wrapper">
+                <div class="first-slider-slide1 swiper-slide">
+                    <img class="slide-img1" src="img/jaw.png" alt="jaw">
+                    <div class="slide-header1">
+                        Лечение зубов<br>и десен
+                    </div>
+                    <div class="slide-text text">
+                        Удобство, комфорт, высокая безопасность<br>и эффективность лечения 
+                        обеспечивается <br>также работой в четыре руки — врач-стоматолог <br>совместно с 
+                        ассистентом<br><br> В клиниках используются одноразовые инструменты,<br>
+                        для многоразового  инструментария применяется<br>эффективная система 
+                        стерилизации, строго<br>соблюдаются санитарные нормы.
+                    </div>
+                    <div class="slide-link1 text">
+                        <a href="#prices">Цены за услуги</a>
+                    </div>
                 </div>
-                <div class="slide-text">
-                    Удобство, комфорт, высокая безопасность и эффективность лечения 
-                    обеспечивается также работой в четыре руки — врач-стоматолог совместно с 
-                    ассистентом. <br> <br> В клиниках используются одноразовые инструменты, 
-                    для многоразового  инструментария применяется эффективная система 
-                    стерилизации, строго соблюдаются санитарные нормы.
+                <div class="first-slider-slide swiper-slide">
+                    <img src="img/hiding_doc.png" alt="doc" class="slide-img">
+                    <div class="slide-header">
+                        Доступные<br>цены
+                    </div>
+                    <div class="slide-link text">
+                        <a href="#prices">Смотреть</a>
+                    </div>
                 </div>
-                <div class="slide-link">
-                    <a href="#prices">Цены за услуги</a>
+                <div class="first-slider-slide swiper-slide">
+                    <img src="img/card.png" alt="card" class="slide-img">
+                    <div class="slide-header">
+                        Оплата<br>online
+                    </div>
+                    <div class="slide-link text">
+                        <a href="#prices">Оплатить</a>
+                    </div>
                 </div>
-                <img class="slide-img" src="img/jaw.png" alt="jaw">
+                <div class="first-slider-slide swiper-slide">
+                    <img src="img/phone.png" alt="phone" class="slide-img">
+                    <div class="slide-header">
+                        Общайтесь<br>со стоматологом<br>online
+                    </div>
+                    <div class="slide-link text">
+                        <a href="#prices">Заказать</a>
+                    </div>
+                </div>
+                <div class="first-slider-slide swiper-slide">
+                    <img src="img/clock.png" alt="doc" class="slide-img">
+                    <div class="slide-header">
+                        Заполните<br>документы<br>заранее
+                    </div>
+                    <div class="slide-link text">
+                        <a href="#prices">Подробнее</a>
+                    </div>
+                </div>
             </div>
-            <div class="first-slider-slide">
-                <div class="slide-header">
-                    Доступные цены
-                </div>
-                <div class="slide-link">
-                    <a href="#prices">Смотреть</a>
-                </div>
-                <img src="img/hiding_doc.png" alt="doc" class="slide-img">
-            </div>
-            <div class="first-slider-slide">
-                <div class="slide-header">
-                    Оплата online
-                </div>
-                <div class="slide-link">
-                    <a href="#prices">Оплатить</a>
-                </div>
-                <img src="img/card.png" alt="card" class="slide-img">
-            </div>
-            <div class="first-slider-slide">
-                <div class="slide-header">
-                    Общайтесь со стоматологом online
-                </div>
-                <div class="slide-link">
-                    <a href="#prices">Заказать</a>
-                </div>
-                <img src="img/phone.png" alt="phone" class="slide-img">
-            </div>
-            <div class="first-slider-slide">
-                <div class="slide-header">
-                    Заполните документы заранее
-                </div>
-                <div class="slide-link">
-                    <a href="#prices">Подробнее</a>
-                </div>
-                <img src="img/clock.png" alt="doc" class="slide-img">
-            </div>
+            <div class="first-swiper-pagination swiper-pagination"></div>
         </div>
-        <div class="first-swiper-pagination swiper-pagination"></div>
     </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
     
 </body>
 </html>
