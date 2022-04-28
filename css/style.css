@@ -331,8 +331,15 @@ a {
 }
 
 
-.doctors-slider {
+.doctors-slider-wrapper{
+    max-width: 1180px;
+    height: 469px;
     margin: 90px auto 96px auto;
+    position: relative;
+}
+.doctors-slider {
+    /* margin: 90px auto 96px auto; */
+    margin-left: 100px;
     max-width: 1020px;
     height: 469px;
     overflow: hidden;
@@ -342,7 +349,7 @@ a {
     width: 300px;
     height: 375px;
     display: grid;
-    grid-template: 47px 75px repeat(3, 1fr) 185px / 142px 1fr;
+    grid-template: 47px 75px repeat(3, 1fr) 185px / 142px 150px;
     background-size: 270px 375px;
     background-image: url(../img/teeth.png);
     background-repeat: no-repeat;
@@ -379,9 +386,36 @@ a {
     width: 14px;
     height: 35px;
 }
-.swiper-button-prev {
+
+
+.otherCities{
+    max-width: 1180px;
+    margin: 94px auto 0px auto;
+    display: flex;
+    justify-content: space-between;
 }
-.doctors-slider-button-next {
+.otherCities-box {
+    width: 233px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
-.swiper-button-next {
+.otherCities-box-header {
+    font-weight: 400;
+    text-align: center;
+}
+.otherCities-box-content {
+    font-weight: 300;
+    line-height: 21px;
+    text-align: center;
+}
+.otherCities-box_img{
+    align-self: flex-end;
+    width: 34px;
+    height: 34px;
+}
+.otherCities-box_img img{
+    width: 34px;
+    height: 34px;
 }

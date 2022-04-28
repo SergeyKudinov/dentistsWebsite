@@ -30,7 +30,6 @@ const doctorsSlider = new Swiper('.doctors-slider', {
   grabCursor: true,
   centeredSlides: true,
   initialSlide: 1,
-  spaceBetween: 40,
   navigation: {
     nextEl: '.doctors-slider-button-next',
     prevEl: '.doctors-slider-button-prev',
