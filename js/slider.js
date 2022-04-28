@@ -35,3 +35,10 @@ const doctorsSlider = new Swiper('.doctors-slider', {
     prevEl: '.doctors-slider-button-prev',
   }
 });
+const prosSlider = new Swiper('.pros-slider', {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.pros-slider-button-next',
+    prevEl: '.pros-slider-button-prev',
+  }
+})
