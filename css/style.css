@@ -157,8 +157,6 @@ a {
     grid-template: 1fr / repeat(3, 1fr);
     min-width: 0;
 }
-.swiper-wrapper {
-}
 .first-slider-slide {
     position: relative;
     display: flex;
@@ -278,14 +276,14 @@ a {
     position: relative;
     z-index: 2;
 }
-.patients-container{
+.patients-header{
     border-bottom: 2px solid #f4f4f4;
     max-width: 1440px;
-    height: 56px;
     margin-left: auto;
     margin-right: auto;
+    height: 56px;
 }
-.patients{
+.patients-content{
     font-weight: 500;
     font-size: 32px;
     line-height: 38px;
@@ -293,5 +291,97 @@ a {
     padding-bottom: 16px;
     max-width: 1180px;
     margin: 100px auto 118px auto;
+    z-index: 2;
 }
 
+
+.patients-slider {
+    margin: 100px auto 120px auto;
+    width: 580px;
+    height: 271px;
+    overflow: hidden;
+    position: relative;
+}
+.patients-slider-slide {
+    width: 580px;
+    height: 222px;
+    display: flex;
+}
+.swiper-slide {
+}
+.patients-slider-pagination .swiper-pagination {
+    position: absolute;
+}
+.swiper-pagination {
+}
+.patients-slider-pagination .swiper-pagination-bullet-active{
+    width: 40px;
+    height: 12px;
+}
+.patients-slider-pagination .swiper-pagination-bullet-active-next,
+.patients-slider-pagination .swiper-pagination-bullet-active-prev{
+    width: 12px;
+    height: 12px;
+}
+.patients-button-prev::after, .patients-button-next::after {
+    color: #FFFF;
+    width: 7px;
+    height: 14px;
+    font-size: 20px !important;
+}
+
+
+.doctors-slider {
+    margin: 90px auto 96px auto;
+    max-width: 1020px;
+    height: 469px;
+    overflow: hidden;
+    position: relative;
+}
+.doctors-slider-slide {
+    width: 300px;
+    height: 375px;
+    display: grid;
+    grid-template: 47px 75px repeat(3, 1fr) 185px / 142px 1fr;
+    background-size: 270px 375px;
+    background-image: url(../img/teeth.png);
+    background-repeat: no-repeat;
+}
+.doctors-slider-slide img{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    width: 150px;
+    height: 150px;
+}
+.doc-name {
+    font-weight: 400;
+    grid-row-start: 3;
+    margin-bottom: 8px;
+}
+.doc-spec {
+    font-weight: 300;
+    grid-row-start: 4;
+    margin-bottom: 17px;
+}
+.exp span{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+.exp {
+    font-weight: 300;
+    grid-row-start: 5;
+}
+.doctors-slider-button-next::after,
+.doctors-slider-button-prev::after{
+    color: #000000;
+    font-size: 35px !important;
+    width: 14px;
+    height: 35px;
+}
+.swiper-button-prev {
+}
+.doctors-slider-button-next {
+}
+.swiper-button-next {
+}

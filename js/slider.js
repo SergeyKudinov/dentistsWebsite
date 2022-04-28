@@ -9,3 +9,30 @@ const swiper = new Swiper('.first-slider', {
     },
     grabCursor: true,
   });
+
+const patientsSwiper = new Swiper('.patients-slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  pagination: {
+    el: '.patients-slider-pagination',
+    type: 'bullets',
+    dynamicBullets: true,
+  },
+  grabCursor: true,
+  centeredSlides: true,
+  navigation: {
+    nextEl: '.patients-button-next',
+    prevEl: '.patients-button-prev',
+  },
+});
+const doctorsSlider = new Swiper('.doctors-slider', {
+  slidesPerView: 3,
+  grabCursor: true,
+  centeredSlides: true,
+  initialSlide: 1,
+  spaceBetween: 40,
+  navigation: {
+    nextEl: '.doctors-slider-button-next',
+    prevEl: '.doctors-slider-button-prev',
+  }
+});
