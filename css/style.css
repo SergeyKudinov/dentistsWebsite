@@ -637,16 +637,20 @@ a {
 }
 
 
-.review-slider {
+.cont-for-review-buttons{
     max-width: 1180px;
     margin: 80px auto 130px auto;
     position: relative;
+}
+.review-slider {
+    max-width: 1020px;
+    margin: auto;
     overflow: hidden;
 }
 .review-slider-wrapper{
     display: flex;
     min-width: 0;
-    
+
 }
 .review-slider-slide {
     width: 300px;
@@ -719,4 +723,110 @@ a {
     width: 14px;
     height: 35px;
     color: #2B2B2B;
+}
+
+
+
+.appointment {
+    max-width: 1180px;
+    margin: 130px auto 120px auto;
+    background: radial-gradient(83.43% 942.2% at 83.43% 50%, #ECF2FF 0%, #B2C9FF 100%);
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-around;
+}
+.appointment-text {
+    display: grid;
+    grid-template-rows: 60px 66px 32px 23px 20px 23px 20px 23px 39px 47px 1fr;
+    margin-left: 80px;
+}
+.appointment-text a{
+    grid-row-start: 10;
+}
+.appointment-header {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: #2B2B2B;
+    grid-row-start: 2;
+}
+.app-text {
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2B2B2B;
+}
+.app-text1{
+    grid-row-start: 4;
+}
+.app-text2{
+    grid-row-start: 6;
+}
+.app-text3{
+    grid-row-start: 8;
+}
+.app-link {
+    background: linear-gradient(89.84deg, #FFDD84 0.12%, #FFE49E 99.86%);
+    border-radius: 2px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 242px;
+    height: 47px;
+}
+
+
+
+.pros-link {
+    max-width: 1180px;
+    height: 260px;
+    margin: 101px auto 120px auto;
+    display: flex;
+    justify-content: space-between;
+    background: radial-gradient(100% 1129.3% at 0% 29.42%, #ECF2FF 0%, #B2C9FF 100%);
+    border-radius: 2px;
+}
+.pros-link_img, .pros-link_img img{
+    max-width: 290px;
+    max-height: 226px;
+}
+.pros-link_img{
+    margin: 17px 39px auto 8px;
+}
+.pros-link-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.pros-link-text_header {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: #2B2B2B;
+}
+.pros-link-text-text {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+    color: #2B2B2B;
+}
+.pros-link-text-text span{
+    font-weight: 500;
+}
+.pros-link_link {
+    background: linear-gradient(89.84deg, #FFDD84 0.12%, #FFE49E 99.86%);
+    border-radius: 2px;
+    width: 160px;
+    height: 47px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.pros-link a {
+    position: relative;
+
 }

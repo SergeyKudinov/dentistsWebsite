@@ -42,9 +42,9 @@ const prosSlider = new Swiper('.pros-slider', {
     prevEl: '.pros-slider-button-prev',
   },
 });
-const reviewSlider = new Slider('.review-slider', {
+const reviewSlider = new Swiper('.review-slider', {
   slidesPerView: 3,
-  spaceBetween:60,
+  spaceBetween: 60,
   navigation: {
     nextEl: '.review-slider-button-next',
     prevEl: '.review-slider-button-prev',
