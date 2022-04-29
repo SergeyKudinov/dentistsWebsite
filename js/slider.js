@@ -40,5 +40,5 @@ const prosSlider = new Swiper('.pros-slider', {
   navigation: {
     nextEl: '.pros-slider-button-next',
     prevEl: '.pros-slider-button-prev',
-  }
-})
+  },
+});

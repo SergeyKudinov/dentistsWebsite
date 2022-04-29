@@ -307,8 +307,6 @@ a {
     height: 222px;
     display: flex;
 }
-.swiper-slide {
-}
 .patients-slider-pagination .swiper-pagination {
     position: absolute;
 }
@@ -338,7 +336,6 @@ a {
     position: relative;
 }
 .doctors-slider {
-    /* margin: 90px auto 96px auto; */
     margin-left: 100px;
     max-width: 1020px;
     height: 469px;
@@ -440,7 +437,7 @@ a {
     width: 680px;
     height: 200px;
     display: grid;
-    grid-template: 19.5% 23% 22% 14% 21.5% / 27% 49% 24%;
+    grid-template: 39px 46px 44px 28px 43px / 184px 333px 163px;
     background: linear-gradient(90deg, #E7EEFE 0%, #B2C9FF 100%);
     border-radius: 2px;
 }
@@ -467,11 +464,25 @@ a {
 .text-content span{
     font-weight: 700;
 }
-.pros-slider-nav {
+.pros-slider-nav{
+    width: 100px;
+    height: 32px;
+    position: absolute;
+    z-index: 3;
+    bottom: 24px;
+    right: 28px;
 }
-.pros-slider-button-prev {
-}
-.pros-slider-button-next {
+.pros-slider-button-prev::after,
+.pros-slider-button-next::after {
+    background-color: #FFFFFF;
+    color: black;
+    opacity: 0.55;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 25px !important;
+    text-align: center;
+    justify-self: center;
 }
 .pros-content-right {
     display: grid;
@@ -512,4 +523,16 @@ a {
 .pros-content-right-img img{
     max-width: 128px;
     max-height: 121px;
+}
+
+
+.services-content{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #2B2B2B;
+    padding-bottom: 16px;
+    max-width: 1180px;
+    margin: 120px auto 100px auto;
+    z-index: 2;
 }
