@@ -641,6 +641,7 @@ a {
     max-width: 1180px;
     margin: 80px auto 130px auto;
     position: relative;
+    border-top: 2px solid #000000;
 }
 .review-slider {
     max-width: 1020px;
@@ -650,7 +651,6 @@ a {
 .review-slider-wrapper{
     display: flex;
     min-width: 0;
-
 }
 .review-slider-slide {
     width: 300px;
@@ -772,6 +772,7 @@ a {
     font-size: 20px;
     line-height: 23px;
     text-align: center;
+    padding-top: 12px;
     color: #FFFFFF;
     width: 242px;
     height: 47px;
@@ -784,7 +785,7 @@ a {
     height: 260px;
     margin: 101px auto 120px auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     background: radial-gradient(100% 1129.3% at 0% 29.42%, #ECF2FF 0%, #B2C9FF 100%);
     border-radius: 2px;
 }
@@ -794,6 +795,12 @@ a {
 }
 .pros-link_img{
     margin: 17px 39px auto 8px;
+}
+.pros-link-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 .pros-link-text {
     display: flex;
@@ -824,9 +831,71 @@ a {
     font-size: 20px;
     line-height: 23px;
     text-align: center;
+    padding-top: 12px;
     color: #FFFFFF;
+    margin-right: 50px;
 }
-.pros-link a {
-    position: relative;
 
+
+
+.rec-slider {
+    margin: 80px auto 101px auto;
+    max-width: 1180px;
+    /* overflow: hidden; */
+}
+.rec-slider-wrapper {
+    display: flex;
+    min-width: 0;
+    justify-content: space-around;
+}
+.rec-slider-slide {
+    width: 380px;
+    height: 225px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+.rec-slide_textbox{
+    margin-left: 24px;
+    max-width: 194px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.rec-slide_date {
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 14px;
+    color: #2B2B2B;
+}
+.rec-slide_header {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+.rec-slide_link {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #2B2B2B;
+}
+.rec-slide_img {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    position: absolute;
+    top: 17px;
+    right: 23px;
+    z-index: 2;
+}
+.rec-slide_bg {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    right: 0px;
 }
