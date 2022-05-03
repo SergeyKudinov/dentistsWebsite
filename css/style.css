@@ -987,3 +987,92 @@ a {
     line-height: 14px;
     color: #A5A5A5;
 }
+
+
+
+.cont{
+    max-width: 1440px;
+    margin: 0px auto 35px auto;
+    height: 628px;
+    background: radial-gradient(100% 525.78% at 100% 0%, #4FCAFF 0%, #E2FDFF 100%);
+}
+.consult{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 130px;
+}
+.consult-tomain{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #767676;
+}
+.consult-header{
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+    color: #2B2B2B;
+}
+.consult-tomain span{
+    color: #CCCCCC;
+}
+.consult a .app-link{
+    background: none;
+    border: 1px solid #2B2B2B;
+    border-radius: 2px;
+    color: #2B2B2B;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+}
+.consult-img{
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.otherCities-cont{
+    max-width: 1180px;
+    margin: -30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.otherCities-box {
+    max-width: 233px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.otherCities-header {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2B2B2B;
+    width: 167px;
+}
+.otherCities-text {
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+    color: #2B2B2B;
+}
+.header-color1{
+    background: #FFEAB5;
+}
+.header-color2{
+    background: #E2FDFF;
+}
+.header-color3{
+    background: #FF7E95;
+}
+.header-color4{
+    background: #ADF3EE;
+}
+.header-color5{
+    background: #E8AEFF;
+}
