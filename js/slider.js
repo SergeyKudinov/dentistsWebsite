@@ -50,3 +50,11 @@ const reviewSlider = new Swiper('.review-slider', {
     prevEl: '.review-slider-button-prev',
   },
 });
+const recSlider = new Swiper ('.rec-slider', {
+  slidesPerView: 3,
+  grabCursor: true,
+  pagination: {
+    el: '.rec-slider-pagination',
+    type: 'bullets',
+  },
+});

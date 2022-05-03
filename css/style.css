@@ -310,8 +310,6 @@ a {
 .patients-slider-pagination .swiper-pagination {
     position: absolute;
 }
-.swiper-pagination {
-}
 .patients-slider-pagination .swiper-pagination-bullet-active{
     width: 40px;
     height: 12px;
@@ -841,12 +839,13 @@ a {
 .rec-slider {
     margin: 80px auto 101px auto;
     max-width: 1180px;
-    /* overflow: hidden; */
+    height: 288px;
+    overflow: hidden;
+    position: relative;
 }
 .rec-slider-wrapper {
     display: flex;
     min-width: 0;
-    justify-content: space-around;
 }
 .rec-slider-slide {
     width: 380px;
@@ -898,4 +897,21 @@ a {
     z-index: 1;
     bottom: 0px;
     right: 0px;
+}
+.rec-slider-pagination{
+    position: absolute;
+    left: 85% !important;
+    width: 98px !important;
+    height: 14px !important;
+    display: flex;
+    align-items: center;
+}
+.rec-slider-pagination .swiper-pagination-bullet-active{
+    width: 40px;
+    height: 12px;
+}
+.rec-slider-pagination .swiper-pagination-bullet-active-next,
+.rec-slider-pagination .swiper-pagination-bullet-active-prev{
+    width: 12px;
+    height: 12px;
 }
