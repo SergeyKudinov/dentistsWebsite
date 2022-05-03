@@ -1045,6 +1045,7 @@ a {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 100px;
 }
 .otherCities-header {
     text-align: center;
