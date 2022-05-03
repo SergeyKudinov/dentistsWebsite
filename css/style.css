@@ -44,9 +44,6 @@ a {
     margin-right: auto;
     height: 115px;
 }
-.header_img {
-
-}
 .address {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -55,14 +52,6 @@ a {
     line-height: 19px;
     color: #000000;
 }
-.about-clinic {
-}
-.tel {
-
-}
-
-
-
 .nav-text {
     font-weight: 300;
 }
@@ -81,20 +70,6 @@ a {
 }
 .services a{
     font-weight: 300;
-}
-.services {
-}
-.prices {
-}
-.before-after {
-}
-.doctors {
-}
-.reviews {
-}
-.toPatients {
-}
-.fromOtherCities {
 }
 .nav-right-content {
     grid-column-start: 3;
@@ -168,8 +143,6 @@ a {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
 }
-.swiper-slide {
-}
 .first-slide_img {
     right: 0px;
     left: auto;
@@ -211,10 +184,6 @@ a {
     position: absolute;
     z-index: 1;
 }
-.first-slider-pagination{
-} 
-.swiper-pagination{
-}
 .slider-content-right {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
@@ -228,6 +197,9 @@ a {
     padding-left: 20px;
     width: 280px;
     height: 220px;
+    background: url(jannis-lucas-msNCux-u3lo-unsplash.jpg), linear-gradient(245.16deg, #FCFDFF 34.18%, #F2F6F9 80.22%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
 }
 .box_img {
     right: 0px;
@@ -472,15 +444,17 @@ a {
 }
 .pros-slider-button-prev::after,
 .pros-slider-button-next::after {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #FFFFFF;
     color: black;
     opacity: 0.55;
     border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    font-size: 25px !important;
-    text-align: center;
-    justify-self: center;
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 18px !important;
 }
 .pros-content-right {
     display: grid;
@@ -639,7 +613,6 @@ a {
     max-width: 1180px;
     margin: 80px auto 130px auto;
     position: relative;
-    border-top: 2px solid #000000;
 }
 .review-slider {
     max-width: 1020px;
@@ -914,4 +887,103 @@ a {
 .rec-slider-pagination .swiper-pagination-bullet-active-prev{
     width: 12px;
     height: 12px;
+}
+
+
+.map {
+    margin: 120px auto 120px auto;
+    max-width: 1180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.map-content {
+    width: 382px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: url("../img/map_teeth.png") no-repeat;
+}
+.map-content-header {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #2B2B2B;
+    margin-left: 47px;
+    margin-bottom: 8px;
+}
+.map-content-textarea{
+    margin-left: 48px;
+    margin-top: 30px;
+}
+.map-content-textarea, .map-content-textarea a{
+    font-weight: 200;
+    color: #2B2B2B;
+}
+
+
+.footer {
+    max-width: 1180px;
+    height: 350px;
+    margin: 120px auto auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    height: 350px;
+}
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-logo {
+    max-width: 272px;
+    max-height: 144px;
+}
+.footer-phone a{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+}
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 144px;
+    margin-top: 90px;
+}
+.footer-menu a{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+}
+.footer-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 92px;
+    height: 144px;
+}
+.footer-icons a img{
+    width: 24px;
+    height: 24px;
+}
+.underfooter{
+    display: flex;
+    justify-content: space-between;
+}
+.underfooter-text{
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 14px;
+    color: #A5A5A5;
 }
