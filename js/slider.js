@@ -12,7 +12,7 @@ const swiper = new Swiper('.first-slider', {
 
 const patientsSwiper = new Swiper('.patients-slider', {
   slidesPerView: 2,
-  initialSlide: 0,
+  initialSlide: 1,
   spaceBetween: 20,
   pagination: {
     el: '.patients-slider-pagination',
