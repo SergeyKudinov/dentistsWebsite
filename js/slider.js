@@ -11,7 +11,8 @@ const swiper = new Swiper('.first-slider', {
   });
 
 const patientsSwiper = new Swiper('.patients-slider', {
-  slidesPerView: 1,
+  slidesPerView: 2,
+  initialSlide: 0,
   spaceBetween: 20,
   pagination: {
     el: '.patients-slider-pagination',
@@ -26,6 +27,7 @@ const patientsSwiper = new Swiper('.patients-slider', {
   },
 });
 const doctorsSlider = new Swiper('.doctors-slider', {
+  spaceBetween: 60,
   slidesPerView: 3,
   grabCursor: true,
   centeredSlides: true,
