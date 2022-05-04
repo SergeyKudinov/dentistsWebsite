@@ -60,3 +60,15 @@ const recSlider = new Swiper ('.rec-slider', {
     type: 'bullets',
   },
 });
+const priceSlider = new Swiper('.price-slider', {
+  slidesPerView: 3,
+  spaceBetween: 60,
+  initialSlide: 1,
+  pagination: {
+    el: '.price-slider-pagination',
+    type: 'bullets',
+    dynamicBullets: true,
+  },
+  grabCursor: true,
+  centeredSlides: true,
+});
