@@ -10,14 +10,13 @@ const swiper = new Swiper('.first-slider', {
 
 const patientsSwiper = new Swiper('.patients-slider', {
   slidesPerView: 2,
-  initialSlide: 1,
+  initialSlide: 0,
   spaceBetween: 20,
   pagination: {
     el: '.patients-slider-pagination',
     type: 'bullets',
   },
   grabCursor: true,
-  centeredSlides: true,
   navigation: {
     nextEl: '.patients-button-next',
     prevEl: '.patients-button-prev',
@@ -59,12 +58,11 @@ const recSlider = new Swiper ('.rec-slider', {
 const priceSlider = new Swiper('.price-slider', {
   slidesPerView: 3,
   spaceBetween: 60,
-  initialSlide: 1,
+  initialSlide: 0,
   pagination: {
     el: '.price-slider-pagination',
     type: 'bullets',
     dynamicBullets: true,
   },
   grabCursor: true,
-  centeredSlides: true,
 });
