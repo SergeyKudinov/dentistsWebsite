@@ -4,8 +4,6 @@ const swiper = new Swiper('.first-slider', {
     pagination: {
       el: '.first-slider-pagination',
       type: "bullets",
-      clickable: true,
-      dynamicBullets: true,
     },
     grabCursor: true,
   });
@@ -17,7 +15,6 @@ const patientsSwiper = new Swiper('.patients-slider', {
   pagination: {
     el: '.patients-slider-pagination',
     type: 'bullets',
-    dynamicBullets: true,
   },
   grabCursor: true,
   centeredSlides: true,

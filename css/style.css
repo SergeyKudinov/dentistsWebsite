@@ -61,7 +61,7 @@ a {
     max-width: 1180px;
     height: 73px;
     display: grid;
-    grid-template-columns: 1fr 75px 385px;
+    grid-template-columns: 61.03% 6.35% 32.62%;
     align-items: center;
 }
 .nav-left-content{
@@ -125,6 +125,7 @@ a {
 .first-slider {
     width: 580px;
     height: 460px;
+    position: relative;
     overflow: hidden;
 }
 .first-slider-wrapper {
@@ -152,8 +153,6 @@ a {
 .first-slide-header {
     margin-top: 32px;
     margin-bottom: 16px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
@@ -197,7 +196,6 @@ a {
     padding-left: 20px;
     width: 280px;
     height: 220px;
-    background: url(jannis-lucas-msNCux-u3lo-unsplash.jpg), linear-gradient(245.16deg, #FCFDFF 34.18%, #F2F6F9 80.22%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
 }
@@ -206,12 +204,10 @@ a {
     left: auto;
     position: absolute;
     z-index: 1;
-    width: 280px;
-    height: 220px;
+    width: 100%;
+    height: 100%;
 }
 .box-header {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
@@ -221,13 +217,15 @@ a {
 }
 .box-link {
     text-align: center;
-    width: 134px;
-    height: 32px;
+    max-width: 134px;
     border: 1px solid #2B2B2B;
     border-radius: 2px;
-    padding-top: 6px;
     position: relative;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
 }
 .box-link a{
     font-weight: 300;
@@ -235,18 +233,27 @@ a {
     line-height: 23px;
     color: #2B2B2B;
 }
-.swiper-pagination-bullet-active {
-    width: 40px;
+.first-slider .swiper-pagination-bullet-active {
+    width: 40px !important;
+    height: 8px !important;
     border-radius: 30px;
-    margin: 0px 8px 0px 8px;
+    background: #7E7E7E;
+    margin: 0px !important;
 }
-.swiper-pagination-bullet {
+.first-slider .swiper-pagination-bullet {
+    height: 8px;
     background: #918c8c;
-    margin: 0px 8px 0px 8px;
+    margin: 0px !important;
 }
-.first-slider-pagination{
-    position: relative;
+.first-slider-pagination.swiper-pagination{
+    position: absolute;
     z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60px !important;
+    left: 460px;
+    bottom: 24px;
 }
 .patients-header{
     border-bottom: 2px solid #f4f4f4;
@@ -279,8 +286,13 @@ a {
     height: 222px;
     display: flex;
 }
-.patients-slider-pagination .swiper-pagination {
+.patients-slider-pagination.swiper-pagination {
     position: absolute;
+    width: 98px;
+    height: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .patients-slider-pagination .swiper-pagination-bullet-active{
     width: 40px;
