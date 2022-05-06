@@ -1115,7 +1115,6 @@ a {
 
 
 .imp-cont {
-    max-width: 1180px;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -1637,4 +1636,132 @@ a {
 }
 .guarantee_blue{
     background: #83CFFF;
+}
+
+
+.implant{
+    background: radial-gradient(74.97% 394.15% at 74.97% 43.07%, #ADF3EE 0%, #F3FFFE 100%);
+}
+.implant-text{
+    max-width: 400px;
+}
+
+
+
+.tooth_imp-text{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+    max-width: 280px;
+}
+.implant-box{
+    display: flex;
+    flex-direction: column;
+    height: 253px;
+    max-width: 280px;
+}
+
+
+.stages {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.stages-box {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    max-width: 345px;
+}
+.circle{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stages-box_number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: #96DBFF;
+    background: #FFFFFF;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.stages-box_header {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #2B2B2B;
+    margin-top: 28px;
+    margin-bottom: 16px;
+}
+.stages-box_text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 130%;
+    color: #2B2B2B;
+}
+.stage_number1{
+    background-image: linear-gradient(26deg, #D7F1FF 50%, transparent 50%),
+    linear-gradient(90deg, #D7F1FF 50%, #20B3FF 50%);
+}
+.stage_number2{
+    background-image: linear-gradient(90deg, transparent 50%, #20B3FF 50%), 
+    linear-gradient(135deg, #D7F1FF 50%, #20B3FF 50%);
+}
+.stage_number3{
+    background-image: linear-gradient(90deg, transparent 50%, #20B3FF 50%),
+    linear-gradient(270deg, #D7F1FF 50%, #20B3FF 50%);
+}
+
+
+
+
+.construct-header-border{
+    width: 464px;
+    height: 2px;
+    background: linear-gradient(90deg, #E8F7FF 0%, #20B3FF 100%);
+    margin-bottom: 36px;
+}
+.construct{
+    max-width: 1440px;
+    height: 620px;
+    margin: auto;
+    background: linear-gradient(269.47deg, #C0F7F3 0.41%, #F2FFFF 99.54%);
+}
+.construct-text-content{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: flex-start;
+    height: 100%;
+}
+.construct-cont{
+    height: 100%;
+}
+.construct_link{
+    background: none;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2B2B2B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.construct-header{
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.construct-text{
+    margin-bottom: 50px;
 }
