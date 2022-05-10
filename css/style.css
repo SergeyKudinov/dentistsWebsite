@@ -275,7 +275,7 @@ a {
     font-size: 32px;
     line-height: 38px;
     color: #2B2B2B;
-    padding-bottom: 16px;
+    /* padding-bottom: 16px; */
     margin: 100px auto 118px auto;
     z-index: 2;
 }
@@ -425,7 +425,6 @@ a {
 .pros-content {
     display: flex;
     justify-content: space-between;
-    margin: 152px auto 0px auto;
     min-width: 0;
 }
 .pros-slider {
@@ -535,7 +534,6 @@ a {
     font-size: 32px;
     line-height: 38px;
     color: #2B2B2B;
-    padding-bottom: 16px;
     max-width: 1180px;
     margin: 120px auto 100px auto;
     z-index: 2;
@@ -1657,7 +1655,7 @@ a {
 .implant-box{
     display: flex;
     flex-direction: column;
-    height: 253px;
+    /* height: 253px; */
     max-width: 280px;
 }
 
@@ -1740,7 +1738,6 @@ a {
 .construct-text-content{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
     align-items: flex-start;
     height: 100%;
 }
@@ -1764,4 +1761,20 @@ a {
 }
 .construct-text{
     margin-bottom: 50px;
+}
+.construct-img_header{
+    margin-top: 70px;
+    font-weight: 300;
+    color: #2B2B2B;
+    text-align: end;
+}
+
+
+.implant-header{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2B2B2B;
+    width: 90%;
+    margin: 34px auto;
 }
