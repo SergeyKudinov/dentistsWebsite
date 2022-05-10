@@ -59,6 +59,11 @@ a {
 .nav-text {
     font-weight: 300;
 }
+.nav-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .nav-content {
     margin-left: auto;
     margin-right: auto;
@@ -71,9 +76,6 @@ a {
 .nav-left-content{
     display: flex;
     justify-content: space-between;
-}
-.services a{
-    font-weight: 300;
 }
 .nav-right-content {
     grid-column-start: 3;
@@ -104,18 +106,16 @@ a {
     height: 100%;
 }
 .feedback:hover{
-    position: absolute;
     background: url("../img/feedback_hover.png") no-repeat;
     background-size: 100%;
     border: none;
-    right: -2px;
-    top: -2px;
+    transform: translate(2px , -2px);
 }
 .youtube_img{
     width: 24px;
     height: 17px;
 }
-.VK_img{
+.vk_img{
     width: 19px;
     height: 19px;
 }
@@ -426,6 +426,7 @@ a {
     display: flex;
     justify-content: space-between;
     min-width: 0;
+    margin-top: 100px;
 }
 .pros-slider {
     width: 680px;
@@ -752,6 +753,7 @@ a {
     font-size: 20px;
     line-height: 23px;
     color: #2B2B2B;
+    margin-bottom: 36px;
 }
 .app-text1{
     grid-row-start: 4;
@@ -768,7 +770,9 @@ a {
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #FFFFFF;
     width: 242px;
     height: 47px;
@@ -1031,7 +1035,6 @@ a {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     margin-left: 130px;
 }
 .consult-tomain{
@@ -1045,9 +1048,18 @@ a {
     font-size: 50px;
     line-height: 59px;
     color: #2B2B2B;
+    margin-top: 150px;
+    margin-bottom: 24px;
 }
 .consult-tomain span{
     color: #CCCCCC;
+}
+.back_link{
+    position: relative;
+}
+.back_link a{
+    position: absolute;
+    top: 50px;
 }
 .consult a .app-link{
     display: flex;
