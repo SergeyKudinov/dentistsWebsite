@@ -1821,14 +1821,16 @@ a {
 }
 
 
-.faq-acc {
-}
-.faq-acc__item {
+
+.acor-item{
     max-width: 780px;
     position: relative;
     overflow: hidden;
     border: 1px solid #F2F2F2;
     border-radius: 2px;
+}
+
+.faq-acc__item { 
 }
 .faq-acc__item::after {
     display: block;
@@ -1886,9 +1888,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 780px;
+    width: 66%;
 }
-
 
 
  .acor_header {
