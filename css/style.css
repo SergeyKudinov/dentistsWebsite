@@ -1828,10 +1828,9 @@ a {
     overflow: hidden;
     border: 1px solid #F2F2F2;
     border-radius: 2px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.faq-acc__item { 
-}
 .faq-acc__item::after {
     display: block;
     content: '';
@@ -1913,9 +1912,6 @@ a {
 .left_acor-header img{
     margin-right: 20px;
 }
-.acor_content {
-    /* padding: 20px; */
-}
 .acor_time {
     margin-top: 24px;
     margin-bottom: 36px;
@@ -1996,5 +1992,9 @@ a {
     color: #2B2B2B;
     max-width: 80%;
 }
+
+
+
+
 
 
