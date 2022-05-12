@@ -40,31 +40,674 @@
     <nav class="nav">
         <div class="nav-content">
             <div class="nav-left-content">
-                <div class="services nav-box">
-                    <a class="text nav-text" href="#">Все услуги</a>
-                    <img src="img/polygon.png" alt="">
+                <div class="dropdown">
+                    <button class="services nav-box">
+                        <a class="text nav-text" href="#">Все услуги</a>
+                        <img src="img/polygon.png" alt="">
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="tab">
+                            <button class="tablinks text" onmouseover="openCity(event, 'first')">Все зубы за один день</button>
+                            <button class="tablinks text" onmouseover="openCity(event, 'second')">Имплантация</button>
+                            <button class="tablinks text" onmouseover="openCity(event, 'third')">Гигиена полости рта</button>
+                            <button class="tablinks text" onmouseover="openCity(event, 'fourth')">Исправление прикуса</button>
+                            <button class="tablinks text" onmouseover="openCity(event, 'fifth')">Лечение зубов</button>
+                            <button class="tablinks text" onmouseover="openCity(event, 'sixth')">Пародентология</button>
+                            <button class="tablinks text" onmouseover="openCity(event, 'seventh')">Протезирование</button>
+                            <button class="tablinks text" onmouseover="openCity(event, 'eighth')">Хирургия</button>
+                            <button class="tablinks text" onmouseover="openCity(event, 'ninth')">Детская стоматология</button>
+                        </div>
+                        <div id="first" class="tabcontent">
+                            <div class="tabcontent_links">
+                                <div class="tabcontent_link"><a class="text" href="#">Имплантация зубов под наркозом —<br>
+                                    <span>вы сладко спите</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Все зубы на 4-х имплантах —<br>
+                                    <span>при полном отсутствии зубов</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Выбор имплантов</a> </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Одномоментная имплантация —<br> 
+                                    <span>сразу после удаления зуба</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Скуловая имплантация —<br>
+                                    <span>при атрофии костной ткани</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Костная пластика</a> </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Имплантация зубов под седацией —<br>
+                                    <span>вы в сознании, но вам не страшно</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Одноэтапная имплантация —<br>
+                                    <span>сразу с коронкой</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Синус лифтинг</a>
+                                </div>
+                            </div>
+                            <div class="right_add">
+                                <div class="appointment-min">
+                                    <div class="appointment-min-text text">
+                                        <div class="appointment-min-header text">
+                                            Мы продолжаем работать для вас в обычном режиме
+                                        </div>
+                                        <a href="#"><div class="app-link-min">Записаться на прием</div></a>
+                                    </div>
+                                    <div class="appointment-img-min">
+                                        <img src="img/dentist.png" alt="dentist">
+                                    </div>
+                                </div>
+
+                                <div class="right_add-small">
+                                    <div class="pros-content-min">
+                                        <div class="pros-content-right-container">
+                                            <div class="add-min_header text">
+                                                Скидка 39%<br>на имплантацию
+                                            </div>
+                                            <div class="add-min_text text">
+                                                У нас безопасно и выгодно —<br>не важно привиты вы или нет!
+                                            </div>
+                                        </div>
+                                        <div class="add-min_img">
+                                            <img src="img/percentage.png" alt="percentage">
+                                        </div>
+                                    </div>
+
+                                    <div class="add-small_sec">
+                                        <div class="add-sec-min_img">
+                                            <img src="img/jaw_reverse.png" alt="jaw">
+                                        </div>
+                                        <div class="small_text-box">
+                                            <div class="add-min-sec_header text">
+                                                Протезы «под ключ в собственной лаборатории
+                                            </div>
+                                            <div class="add-min-sec_text text">
+                                                От <span>10 000</span> рублей
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          
+                        <div id="second" class="tabcontent">
+                            <div class="tabcontent_links">
+                                <div class="tabcontent_link"><a class="text" href="#">Имплантация зубов под наркозом —<br>
+                                    <span>вы сладко спите</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Все зубы на 4-х имплантах —<br>
+                                    <span>при полном отсутствии зубов</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Выбор имплантов</a> </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Одномоментная имплантация —<br> 
+                                    <span>сразу после удаления зуба</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Скуловая имплантация —<br>
+                                    <span>при атрофии костной ткани</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Костная пластика</a> </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Имплантация зубов под седацией —<br>
+                                    <span>вы в сознании, но вам не страшно</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Одноэтапная имплантация —<br>
+                                    <span>сразу с коронкой</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Синус лифтинг</a>
+                                </div>
+                            </div>
+                            <div class="right_add">
+                                <div class="appointment-min">
+                                    <div class="appointment-min-text text">
+                                        <div class="appointment-min-header text">
+                                            Мы продолжаем работать для вас в обычном режиме
+                                        </div>
+                                        <a href="#"><div class="app-link-min">Записаться на прием</div></a>
+                                    </div>
+                                    <div class="appointment-img-min">
+                                        <img src="img/dentist.png" alt="dentist">
+                                    </div>
+                                </div>
+
+                                <div class="right_add-small">
+                                    <div class="pros-content-min">
+                                        <div class="pros-content-right-container">
+                                            <div class="add-min_header text">
+                                                Скидка 39%<br>на имплантацию
+                                            </div>
+                                            <div class="add-min_text text">
+                                                У нас безопасно и выгодно —<br>не важно привиты вы или нет!
+                                            </div>
+                                        </div>
+                                        <div class="add-min_img">
+                                            <img src="img/percentage.png" alt="percentage">
+                                        </div>
+                                    </div>
+
+                                    <div class="add-small_sec">
+                                        <div class="add-sec-min_img">
+                                            <img src="img/jaw_reverse.png" alt="jaw">
+                                        </div>
+                                        <div class="small_text-box">
+                                            <div class="add-min-sec_header text">
+                                                Протезы «под ключ в собственной лаборатории
+                                            </div>
+                                            <div class="add-min-sec_text text">
+                                                От <span>10 000</span> рублей
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          
+                        <div id="third" class="tabcontent">
+                            <div class="tabcontent_links">
+                                <div class="tabcontent_link"><a class="text" href="#">Имплантация зубов под наркозом —<br>
+                                    <span>вы сладко спите</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Все зубы на 4-х имплантах —<br>
+                                    <span>при полном отсутствии зубов</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Выбор имплантов</a> </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Одномоментная имплантация —<br> 
+                                    <span>сразу после удаления зуба</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Скуловая имплантация —<br>
+                                    <span>при атрофии костной ткани</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Костная пластика</a> </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Имплантация зубов под седацией —<br>
+                                    <span>вы в сознании, но вам не страшно</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Одноэтапная имплантация —<br>
+                                    <span>сразу с коронкой</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Синус лифтинг</a>
+                                </div>
+                            </div>
+                            <div class="right_add">
+                                <div class="appointment-min">
+                                    <div class="appointment-min-text text">
+                                        <div class="appointment-min-header text">
+                                            Мы продолжаем работать для вас в обычном режиме
+                                        </div>
+                                        <a href="#"><div class="app-link-min">Записаться на прием</div></a>
+                                    </div>
+                                    <div class="appointment-img-min">
+                                        <img src="img/dentist.png" alt="dentist">
+                                    </div>
+                                </div>
+
+                                <div class="right_add-small">
+                                    <div class="pros-content-min">
+                                        <div class="pros-content-right-container">
+                                            <div class="add-min_header text">
+                                                Скидка 39%<br>на имплантацию
+                                            </div>
+                                            <div class="add-min_text text">
+                                                У нас безопасно и выгодно —<br>не важно привиты вы или нет!
+                                            </div>
+                                        </div>
+                                        <div class="add-min_img">
+                                            <img src="img/percentage.png" alt="percentage">
+                                        </div>
+                                    </div>
+
+                                    <div class="add-small_sec">
+                                        <div class="add-sec-min_img">
+                                            <img src="img/jaw_reverse.png" alt="jaw">
+                                        </div>
+                                        <div class="small_text-box">
+                                            <div class="add-min-sec_header text">
+                                                Протезы «под ключ в собственной лаборатории
+                                            </div>
+                                            <div class="add-min-sec_text text">
+                                                От <span>10 000</span> рублей
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="fourth" class="tabcontent">
+                            <div class="tabcontent_links">
+                                <div class="tabcontent_link"><a class="text" href="#">Имплантация зубов под наркозом —<br>
+                                    <span>вы сладко спите</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Все зубы на 4-х имплантах —<br>
+                                    <span>при полном отсутствии зубов</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Выбор имплантов</a> </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Одномоментная имплантация —<br> 
+                                    <span>сразу после удаления зуба</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Скуловая имплантация —<br>
+                                    <span>при атрофии костной ткани</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Костная пластика</a> </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Имплантация зубов под седацией —<br>
+                                    <span>вы в сознании, но вам не страшно</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Одноэтапная имплантация —<br>
+                                    <span>сразу с коронкой</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Синус лифтинг</a>
+                                </div>
+                            </div>
+                            <div class="right_add">
+                                <div class="appointment-min">
+                                    <div class="appointment-min-text text">
+                                        <div class="appointment-min-header text">
+                                            Мы продолжаем работать для вас в обычном режиме
+                                        </div>
+                                        <a href="#"><div class="app-link-min">Записаться на прием</div></a>
+                                    </div>
+                                    <div class="appointment-img-min">
+                                        <img src="img/dentist.png" alt="dentist">
+                                    </div>
+                                </div>
+
+                                <div class="right_add-small">
+                                    <div class="pros-content-min">
+                                        <div class="pros-content-right-container">
+                                            <div class="add-min_header text">
+                                                Скидка 39%<br>на имплантацию
+                                            </div>
+                                            <div class="add-min_text text">
+                                                У нас безопасно и выгодно —<br>не важно привиты вы или нет!
+                                            </div>
+                                        </div>
+                                        <div class="add-min_img">
+                                            <img src="img/percentage.png" alt="percentage">
+                                        </div>
+                                    </div>
+
+                                    <div class="add-small_sec">
+                                        <div class="add-sec-min_img">
+                                            <img src="img/jaw_reverse.png" alt="jaw">
+                                        </div>
+                                        <div class="small_text-box">
+                                            <div class="add-min-sec_header text">
+                                                Протезы «под ключ в собственной лаборатории
+                                            </div>
+                                            <div class="add-min-sec_text text">
+                                                От <span>10 000</span> рублей
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          
+                        <div id="fifth" class="tabcontent">
+                            <div class="tabcontent_links">
+                                <div class="tabcontent_link"><a class="text" href="#">Имплантация зубов под наркозом —<br>
+                                    <span>вы сладко спите</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Все зубы на 4-х имплантах —<br>
+                                    <span>при полном отсутствии зубов</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Выбор имплантов</a> </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Одномоментная имплантация —<br> 
+                                    <span>сразу после удаления зуба</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Скуловая имплантация —<br>
+                                    <span>при атрофии костной ткани</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Костная пластика</a> </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Имплантация зубов под седацией —<br>
+                                    <span>вы в сознании, но вам не страшно</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Одноэтапная имплантация —<br>
+                                    <span>сразу с коронкой</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Синус лифтинг</a>
+                                </div>
+                            </div>
+                            <div class="right_add">
+                                <div class="appointment-min">
+                                    <div class="appointment-min-text text">
+                                        <div class="appointment-min-header text">
+                                            Мы продолжаем работать для вас в обычном режиме
+                                        </div>
+                                        <a href="#"><div class="app-link-min">Записаться на прием</div></a>
+                                    </div>
+                                    <div class="appointment-img-min">
+                                        <img src="img/dentist.png" alt="dentist">
+                                    </div>
+                                </div>
+
+                                <div class="right_add-small">
+                                    <div class="pros-content-min">
+                                        <div class="pros-content-right-container">
+                                            <div class="add-min_header text">
+                                                Скидка 39%<br>на имплантацию
+                                            </div>
+                                            <div class="add-min_text text">
+                                                У нас безопасно и выгодно —<br>не важно привиты вы или нет!
+                                            </div>
+                                        </div>
+                                        <div class="add-min_img">
+                                            <img src="img/percentage.png" alt="percentage">
+                                        </div>
+                                    </div>
+
+                                    <div class="add-small_sec">
+                                        <div class="add-sec-min_img">
+                                            <img src="img/jaw_reverse.png" alt="jaw">
+                                        </div>
+                                        <div class="small_text-box">
+                                            <div class="add-min-sec_header text">
+                                                Протезы «под ключ в собственной лаборатории
+                                            </div>
+                                            <div class="add-min-sec_text text">
+                                                От <span>10 000</span> рублей
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          
+                        <div id="sixth" class="tabcontent">
+                            <div class="tabcontent_links">
+                                <div class="tabcontent_link"><a class="text" href="#">Имплантация зубов под наркозом —<br>
+                                    <span>вы сладко спите</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Все зубы на 4-х имплантах —<br>
+                                    <span>при полном отсутствии зубов</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Выбор имплантов</a> </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Одномоментная имплантация —<br> 
+                                    <span>сразу после удаления зуба</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Скуловая имплантация —<br>
+                                    <span>при атрофии костной ткани</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Костная пластика</a> </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Имплантация зубов под седацией —<br>
+                                    <span>вы в сознании, но вам не страшно</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Одноэтапная имплантация —<br>
+                                    <span>сразу с коронкой</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Синус лифтинг</a>
+                                </div>
+                            </div>
+                            <div class="right_add">
+                                <div class="appointment-min">
+                                    <div class="appointment-min-text text">
+                                        <div class="appointment-min-header text">
+                                            Мы продолжаем работать для вас в обычном режиме
+                                        </div>
+                                        <a href="#"><div class="app-link-min">Записаться на прием</div></a>
+                                    </div>
+                                    <div class="appointment-img-min">
+                                        <img src="img/dentist.png" alt="dentist">
+                                    </div>
+                                </div>
+
+                                <div class="right_add-small">
+                                    <div class="pros-content-min">
+                                        <div class="pros-content-right-container">
+                                            <div class="add-min_header text">
+                                                Скидка 39%<br>на имплантацию
+                                            </div>
+                                            <div class="add-min_text text">
+                                                У нас безопасно и выгодно —<br>не важно привиты вы или нет!
+                                            </div>
+                                        </div>
+                                        <div class="add-min_img">
+                                            <img src="img/percentage.png" alt="percentage">
+                                        </div>
+                                    </div>
+
+                                    <div class="add-small_sec">
+                                        <div class="add-sec-min_img">
+                                            <img src="img/jaw_reverse.png" alt="jaw">
+                                        </div>
+                                        <div class="small_text-box">
+                                            <div class="add-min-sec_header text">
+                                                Протезы «под ключ в собственной лаборатории
+                                            </div>
+                                            <div class="add-min-sec_text text">
+                                                От <span>10 000</span> рублей
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="seventh" class="tabcontent">
+                            <div class="tabcontent_links">
+                                <div class="tabcontent_link"><a class="text" href="#">Имплантация зубов под наркозом —<br>
+                                    <span>вы сладко спите</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Все зубы на 4-х имплантах —<br>
+                                    <span>при полном отсутствии зубов</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Выбор имплантов</a> </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Одномоментная имплантация —<br> 
+                                    <span>сразу после удаления зуба</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Скуловая имплантация —<br>
+                                    <span>при атрофии костной ткани</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Костная пластика</a> </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Имплантация зубов под седацией —<br>
+                                    <span>вы в сознании, но вам не страшно</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Одноэтапная имплантация —<br>
+                                    <span>сразу с коронкой</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Синус лифтинг</a>
+                                </div>
+                            </div>
+                            <div class="right_add">
+                                <div class="appointment-min">
+                                    <div class="appointment-min-text text">
+                                        <div class="appointment-min-header text">
+                                            Мы продолжаем работать для вас в обычном режиме
+                                        </div>
+                                        <a href="#"><div class="app-link-min">Записаться на прием</div></a>
+                                    </div>
+                                    <div class="appointment-img-min">
+                                        <img src="img/dentist.png" alt="dentist">
+                                    </div>
+                                </div>
+
+                                <div class="right_add-small">
+                                    <div class="pros-content-min">
+                                        <div class="pros-content-right-container">
+                                            <div class="add-min_header text">
+                                                Скидка 39%<br>на имплантацию
+                                            </div>
+                                            <div class="add-min_text text">
+                                                У нас безопасно и выгодно —<br>не важно привиты вы или нет!
+                                            </div>
+                                        </div>
+                                        <div class="add-min_img">
+                                            <img src="img/percentage.png" alt="percentage">
+                                        </div>
+                                    </div>
+
+                                    <div class="add-small_sec">
+                                        <div class="add-sec-min_img">
+                                            <img src="img/jaw_reverse.png" alt="jaw">
+                                        </div>
+                                        <div class="small_text-box">
+                                            <div class="add-min-sec_header text">
+                                                Протезы «под ключ в собственной лаборатории
+                                            </div>
+                                            <div class="add-min-sec_text text">
+                                                От <span>10 000</span> рублей
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          
+                        <div id="eighth" class="tabcontent">
+                            <div class="tabcontent_links">
+                                <div class="tabcontent_link"><a class="text" href="#">Имплантация зубов под наркозом —<br>
+                                    <span>вы сладко спите</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Все зубы на 4-х имплантах —<br>
+                                    <span>при полном отсутствии зубов</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Выбор имплантов</a> </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Одномоментная имплантация —<br> 
+                                    <span>сразу после удаления зуба</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Скуловая имплантация —<br>
+                                    <span>при атрофии костной ткани</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Костная пластика</a> </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Имплантация зубов под седацией —<br>
+                                    <span>вы в сознании, но вам не страшно</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Одноэтапная имплантация —<br>
+                                    <span>сразу с коронкой</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Синус лифтинг</a>
+                                </div>
+                            </div>
+                            <div class="right_add">
+                                <div class="appointment-min">
+                                    <div class="appointment-min-text text">
+                                        <div class="appointment-min-header text">
+                                            Мы продолжаем работать для вас в обычном режиме
+                                        </div>
+                                        <a href="#"><div class="app-link-min">Записаться на прием</div></a>
+                                    </div>
+                                    <div class="appointment-img-min">
+                                        <img src="img/dentist.png" alt="dentist">
+                                    </div>
+                                </div>
+
+                                <div class="right_add-small">
+                                    <div class="pros-content-min">
+                                        <div class="pros-content-right-container">
+                                            <div class="add-min_header text">
+                                                Скидка 39%<br>на имплантацию
+                                            </div>
+                                            <div class="add-min_text text">
+                                                У нас безопасно и выгодно —<br>не важно привиты вы или нет!
+                                            </div>
+                                        </div>
+                                        <div class="add-min_img">
+                                            <img src="img/percentage.png" alt="percentage">
+                                        </div>
+                                    </div>
+
+                                    <div class="add-small_sec">
+                                        <div class="add-sec-min_img">
+                                            <img src="img/jaw_reverse.png" alt="jaw">
+                                        </div>
+                                        <div class="small_text-box">
+                                            <div class="add-min-sec_header text">
+                                                Протезы «под ключ в собственной лаборатории
+                                            </div>
+                                            <div class="add-min-sec_text text">
+                                                От <span>10 000</span> рублей
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          
+                        <div id="ninth" class="tabcontent">
+                            <div class="tabcontent_links">
+                                <div class="tabcontent_link"><a class="text" href="#">Имплантация зубов под наркозом —<br>
+                                    <span>вы сладко спите</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Все зубы на 4-х имплантах —<br>
+                                    <span>при полном отсутствии зубов</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Выбор имплантов</a> </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Одномоментная имплантация —<br> 
+                                    <span>сразу после удаления зуба</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Скуловая имплантация —<br>
+                                    <span>при атрофии костной ткани</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Костная пластика</a> </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Имплантация зубов под седацией —<br>
+                                    <span>вы в сознании, но вам не страшно</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Одноэтапная имплантация —<br>
+                                    <span>сразу с коронкой</span></a>
+                                </div>
+                                <div class="tabcontent_link"><a class="text" href="#">Синус лифтинг</a>
+                                </div>
+                            </div>
+                            <div class="right_add">
+                                <div class="appointment-min">
+                                    <div class="appointment-min-text text">
+                                        <div class="appointment-min-header text">
+                                            Мы продолжаем работать для вас в обычном режиме
+                                        </div>
+                                        <a href="#"><div class="app-link-min">Записаться на прием</div></a>
+                                    </div>
+                                    <div class="appointment-img-min">
+                                        <img src="img/dentist.png" alt="dentist">
+                                    </div>
+                                </div>
+
+                                <div class="right_add-small">
+                                    <div class="pros-content-min">
+                                        <div class="pros-content-right-container">
+                                            <div class="add-min_header text">
+                                                Скидка 39%<br>на имплантацию
+                                            </div>
+                                            <div class="add-min_text text">
+                                                У нас безопасно и выгодно —<br>не важно привиты вы или нет!
+                                            </div>
+                                        </div>
+                                        <div class="add-min_img">
+                                            <img src="img/percentage.png" alt="percentage">
+                                        </div>
+                                    </div>
+
+                                    <div class="add-small_sec">
+                                        <div class="add-sec-min_img">
+                                            <img src="img/jaw_reverse.png" alt="jaw">
+                                        </div>
+                                        <div class="small_text-box">
+                                            <div class="add-min-sec_header text">
+                                                Протезы «под ключ в собственной лаборатории
+                                            </div>
+                                            <div class="add-min-sec_text text">
+                                                От <span>10 000</span> рублей
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="prices nav-box">
+                <button class="prices nav-box">
                     <a class="text nav-text" href="#">Цены</a>
                     <img src="img/polygon.png" alt="">
-                </div>
-                <div class="before-after nav-box">
+                </button>
+                <button class="before-after nav-box">
                     <a class="text nav-text" href="#">До/После</a>
-                </div>
-                <div class="doctors nav-box">
+                </button>
+                <button class="doctors nav-box">
                     <a class="text nav-text" href="#">Врачи</a>
                     <img src="img/polygon.png" alt="">
-                </div>
-                <div class="reviews nav-box">
+                </button>
+                <button class="reviews nav-box">
                     <a class="text nav-text" href="#">Отзывы</a>
-                </div>
-                <div class="toPatients nav-box">
+                </button>
+                <button class="toPatients nav-box">
                     <a class="text nav-text" href="#">Пациентам</a>
                     <img src="img/polygon.png" alt="">
-                </div>
-                <div class="fromOtherCities nav-box">
+                </button>
+                <button class="fromOtherCities nav-box">
                     <a class="text nav-text" href="#">Из других городов</a>
-                </div>
+                </button>
             </div>
             <div class="nav-right-content">
                 <div class="soc_nets">
@@ -984,6 +1627,7 @@
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/script.js"></script>
     
 </body>
 </html>
