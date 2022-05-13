@@ -52,6 +52,7 @@ const reviewSlider = new Swiper('.review-slider', {
 });
 const recSlider = new Swiper ('.rec-slider', {
   slidesPerView: 3,
+  spaceBetween: 20,
   grabCursor: true,
   pagination: {
     el: '.rec-slider-pagination',
