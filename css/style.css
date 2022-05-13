@@ -15,11 +15,13 @@
     max-width: 1180px;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
 }
 .header {
     max-width: 1180px;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
 }
 .header-border{
     height: 1px;
@@ -56,6 +58,9 @@ a {
     font-size: 16px;
     line-height: 19px;
     color: #000000;
+}
+.nav{
+    padding: 10px;
 }
 .nav-text {
     font-weight: 300;
@@ -341,18 +346,16 @@ a {
     align-content: center;
     border: 1px solid #2B2B2B;
     border-radius: 2px;
+    padding: 6px;
 }
 .feedback a{
-    margin-top: 6.5px;
-    display: block;
-    text-align: center;
     height: 100%;
+
 }
 .feedback:hover{
     background: url("../img/feedback_hover.png") no-repeat;
-    background-size: 100%;
-    border: none;
-    transform: translate(2px , -2px);
+    background-size: 100% 99%;
+    border: 1px solid white;
 }
 .youtube_img{
     width: 24px;
@@ -374,12 +377,16 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
+    gap: 20px;
 }
 .first-slider {
-    width: 580px;
-    height: 460px;
+    max-width: 580px;
+    width: 100%;
+    height: 100%;
     position: relative;
     overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
 }
 .first-slider-wrapper {
     display: grid;
@@ -390,7 +397,7 @@ a {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-left: 32px;
+    padding: 0 32px;
     width: 580px;
     height: 460px;
     background: #EAF1F1;
@@ -401,7 +408,7 @@ a {
     right: 0px;
     left: auto;
     position: absolute;
-    z-index: 1;
+    z-index: -1;
 }
 .first-slide-header {
     margin-top: 32px;
@@ -417,40 +424,33 @@ a {
     font-weight: 300;
     color: #2B2B2B;
     z-index: 2;
-    width: 408px;
-    height: 171px;
+    max-width: 408px;
     margin-bottom: 51px;
 }
 .first-slide_link {
     font-weight: 300;
     font-size: 20px;
     line-height: 23px;
-    left: 32px;
-    right: auto;
     max-width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    text-align: center;
     border: 1px solid #2B2B2B;
     border-radius: 2px;
-    position: absolute;
-    z-index: 1;
 }
 .slider-content-right {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
     justify-content: space-around;
+    grid-gap: 20px;
 }
 .slider-content-box {
     position: relative;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    padding-left: 20px;
-    width: 280px;
-    height: 220px;
+    padding: 0 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
 }
@@ -471,7 +471,6 @@ a {
     z-index: 2;
 }
 .box-link {
-    text-align: center;
     max-width: 134px;
     border: 1px solid #2B2B2B;
     border-radius: 2px;
@@ -507,34 +506,36 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 60px !important;
-    left: 460px;
+    left: 75%;
     bottom: 24px;
 }
 .patients-header{
     height: 56px;
+    margin: 100px auto 6px auto;
 }
 .patients-content{
     font-weight: 500;
     font-size: 32px;
     line-height: 38px;
     color: #2B2B2B;
-    /* padding-bottom: 16px; */
-    margin: 100px auto 118px auto;
     z-index: 2;
 }
 
 
 .patients-slider {
     margin: 100px auto 120px auto;
-    width: 1160px;
+    max-width: 1160px;
     height: 271px;
     overflow: hidden;
     position: relative;
 }
 .patients-slider-slide {
-    width: 580px;
+    max-width: 50%;
     height: 222px;
     display: flex;
+}
+.patients-slider-slide img{
+    max-width: 50%;
 }
 .patients-slider-pagination.swiper-pagination {
     position: absolute;
@@ -546,17 +547,15 @@ a {
     left: 87%;
 }
 .patients-slider-pagination .swiper-pagination-bullet-active{
-    width: 40px;
+    width: 40px !important;
     height: 12px;
     background: #7E7E7E;
     border-radius: 30px;
 }
-.patients-slider-pagination.swiper-pagination-bullet{
-    width: 12px !important;
-    height: 12px !important;
-    background: #918c8c;
-    margin: 0px !important;
-    position: absolute;
+.patients-slider-pagination .swiper-pagination-bullet,
+.patients-slider-pagination .swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
 }
 .patients-nav-cont{
     display: flex;
@@ -581,38 +580,39 @@ a {
     height: 469px;
     margin: 90px auto 96px auto;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 .doctors-slider {
-    margin-left: 100px;
     max-width: 1020px;
     height: 469px;
     overflow: hidden;
     position: relative;
 }
 .doctors-slider-slide {
-    width: 300px;
+    max-width: 300px;
     height: 375px;
-    display: grid;
-    grid-template: 47px 75px repeat(3, 1fr) 185px / 142px 150px;
     background-size: 270px 375px;
     background-image: url(../img/teeth.png);
     background-repeat: no-repeat;
+    position: relative;
 }
 .doctors-slider-slide img{
-    grid-column-start: 2;
-    grid-row-start: 2;
     width: 150px;
     height: 150px;
+    position: absolute;
+    right: 0;
+    top: 7px;
 }
 .doc-name {
     font-weight: 400;
-    grid-row-start: 3;
-    margin-bottom: 8px;
+    margin: 82px auto 8px 8px;
+    max-width: 40%;
 }
 .doc-spec {
     font-weight: 300;
-    grid-row-start: 4;
-    margin-bottom: 17px;
+    margin: 0 auto 17px 8px;
+    max-width: 55%;
 }
 .exp span{
     font-weight: 400;
@@ -621,7 +621,7 @@ a {
 }
 .exp {
     font-weight: 300;
-    grid-row-start: 5;
+    margin-left: 8px;
 }
 .doctors-slider-button-next::after,
 .doctors-slider-button-prev::after{
@@ -676,7 +676,7 @@ a {
     height: 200px;
     overflow: hidden;
     position: relative;
-    margin: 0px auto 0px auto;
+    margin: 0px 20px 0px auto;
 }
 .pros-slider-slide {
     width: 680px;
@@ -779,7 +779,6 @@ a {
     line-height: 38px;
     color: #2B2B2B;
     max-width: 1180px;
-    margin: 120px auto 100px auto;
     z-index: 2;
 }
 
@@ -787,7 +786,7 @@ a {
 .services-wrapper {
     margin: 80px auto 150px auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .services-column-header {
     height: 23px;
@@ -1209,6 +1208,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 10px;
 }
 .footer-content{
     display: flex;
@@ -1666,7 +1666,7 @@ a {
     color: #2B2B2B;
 }
 .guarantee {
-    font-weight: 500;
+    font-weight: 300;
     font-size: 20px;
     line-height: 23px;
     color: #2B2B2B;
@@ -1676,7 +1676,7 @@ a {
     padding-top: 15px;
 }
 .guarantee span{
-    font-weight: 800;
+    font-weight: 500;
 }
 .price-slider-pagination .swiper-pagination{
     position: absolute;
@@ -1684,13 +1684,12 @@ a {
 .price-slider-pagination .swiper-pagination-bullet-active{
     width: 12px;
     height: 12px;
-    background: #2B2B2B;
+    background: #2B2B2B !important;
 }
-.price-slider-pagination .swiper-pagination-bullet-active-next,
-.price-slider-pagination .swiper-pagination-bullet-active-prev{
-    width: 12px;
-    height: 12px;
-    background: #CACACA;
+.price-slider-pagination .swiper-pagination-bullet,
+.price-slider-pagination .swiper-pagination-bullet{
+    width: 12px !important;
+    height: 12px !important;
 }
 
 .review-slider-slide_sec{

@@ -4,8 +4,10 @@ const swiper = new Swiper('.first-slider', {
     pagination: {
       el: '.first-slider-pagination',
       type: "bullets",
+      clickable: true,
     },
     grabCursor: true,
+    
   });
 
 const patientsSwiper = new Swiper('.patients-slider', {
@@ -15,6 +17,7 @@ const patientsSwiper = new Swiper('.patients-slider', {
   pagination: {
     el: '.patients-slider-pagination',
     type: 'bullets',
+    clickable: true,
   },
   grabCursor: true,
   navigation: {
@@ -53,6 +56,7 @@ const recSlider = new Swiper ('.rec-slider', {
   pagination: {
     el: '.rec-slider-pagination',
     type: 'bullets',
+    clickable: true,
   },
 });
 const priceSlider = new Swiper('.price-slider', {
@@ -62,7 +66,7 @@ const priceSlider = new Swiper('.price-slider', {
   pagination: {
     el: '.price-slider-pagination',
     type: 'bullets',
-    dynamicBullets: true,
+    clickable: true,
   },
   grabCursor: true,
 });
