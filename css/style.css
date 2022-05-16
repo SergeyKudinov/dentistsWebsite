@@ -36,11 +36,8 @@ a {
     line-height: 19px;
     color: #000000;
 }
-.tel a{
+.tel{
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
 }
 .header-menu {
     display: flex;
@@ -317,7 +314,7 @@ a {
 .nav-content {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1180px;
+    /* max-width: 1180px; */
     height: 73px;
     display: grid;
     grid-template-columns: 61.03% 6.35% 32.62%;
@@ -414,6 +411,7 @@ a {
     z-index: -1;
 }
 .first-slide-header {
+    max-width: 65%;
     margin-top: 32px;
     margin-bottom: 16px;
     font-weight: 500;
@@ -427,7 +425,7 @@ a {
     font-weight: 300;
     color: #2B2B2B;
     z-index: 2;
-    max-width: 408px;
+    max-width: 75%;
     margin-bottom: 51px;
 }
 .first-slide_link {
@@ -514,6 +512,13 @@ a {
     height: 56px;
     margin-bottom: 6px;
 }
+.indent{
+    margin-top: 100px;
+}
+.price-implant{
+    height: 56px;
+    margin-bottom: 80px;
+}
 .patients-content{
     font-weight: 500;
     font-size: 32px;
@@ -578,8 +583,7 @@ a {
 
 
 .doctors-slider-wrapper{
-    height: 469px;
-    margin: 90px auto 96px auto;
+    margin: 90px auto 0px auto;
     position: relative;
     display: flex;
     justify-content: center;
@@ -678,10 +682,10 @@ a {
     height: 200px;
     overflow: hidden;
     position: relative;
-    margin: 0px 20px 0px auto;
+    margin: 0px 20px 0px 0;
 }
 .pros-slider-slide {
-    width: 680px;
+    max-width: 680px;
     height: 200px;
     background: linear-gradient(90deg, #E7EEFE 0%, #B2C9FF 100%);
     border-radius: 2px;
@@ -744,7 +748,6 @@ a {
     grid-template: 1fr 1fr / 1fr 148px;
     height: 200px;
     max-width: 480px;
-    margin: auto;
     background: linear-gradient(90deg, #60C7C0 0%, #40F5E9 100%);
     border-radius: 2px;
 }
@@ -1099,6 +1102,7 @@ a {
     border: 1px solid #2B2B2B;
     border-radius: 2px;
     margin-top: 56px;
+    margin-bottom: 56px;
     padding-top: 9px;
     padding-bottom: 11px;
     max-width: 230px;
@@ -1211,6 +1215,7 @@ a {
     align-items: center;
 }
 .map-content {
+    padding: 0 5px;
     width: 270px;
     height: 375px;
     display: flex;
@@ -1307,11 +1312,23 @@ a {
 .cont{
     max-width: 1440px;
     margin: 0px auto 35px auto;
-    height: 628px;
     background: none;
 }
-.banner{
+.banner_allon4{
+    position: relative;
     background: radial-gradient(100% 525.78% at 100% 0%, #4FCAFF 0%, #E2FDFF 100%);
+}
+.banner_children{
+    position: relative;
+    background: radial-gradient(100% 525.78% at 100% 0%, #F6E5FF 0%, #F2F5FF 100%);
+}
+.banner_why{
+    background: #F3FFFD;
+    margin-bottom: 80px;
+}
+.banner_implant{
+    position: relative;
+    background: radial-gradient(74.97% 394.15% at 74.97% 43.07%, #ADF3EE 0%, #F3FFFE 100%);
 }
 .consult{
     position: relative;
@@ -1332,14 +1349,12 @@ a {
     color: #2B2B2B;
     margin-top: 150px;
     margin-bottom: 24px;
+    width: 80%;
 }
 .consult-tomain span{
     color: #CCCCCC;
 }
 .back_link{
-    position: relative;
-}
-.back_link a{
     position: absolute;
     top: 50px;
 }
@@ -1357,6 +1372,10 @@ a {
 .consult-img{
     display: flex;
     align-items: flex-end;
+}
+.consult-img img{
+    max-width: 422px;
+    max-height: 531px;
 }
 
 
@@ -1435,7 +1454,7 @@ a {
 
 .ben-cont {
     height: 94px;
-    margin: 130px auto 100px auto;
+    margin: 100px auto 100px auto;
 }
 .ben-text-content {
     position: absolute;
@@ -1464,12 +1483,11 @@ a {
     max-width: 1180px;
     margin: 80px auto 50px auto;
     display: grid;
-    grid-template: repeat(3, 225px) / repeat(3, 380px);
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
     justify-content: space-between;
 }
 .allvideo-box {
-    width: 380px;
-    height: 225px;
+    max-width: 380px;
     position: relative;
 }
 .allvideo-box_video{
@@ -1482,13 +1500,12 @@ a {
     top: 0;
     left: 0;
 }
-.allvideo_play{
-    top: 66px;
-    left: 143px;
-}
 .allvideo-box-img {
     position: absolute;
     z-index: -1;
+}
+.allvideo-box-img img{
+    max-width: 100%;
 }
 .allvideo-box-header {
     font-weight: 400;
@@ -1496,10 +1513,10 @@ a {
     line-height: 28px;
     color: #000000;
     margin: 40px auto 13px 23px;
-    max-width: 262px;
+    max-width: 70%;
 }
 .allvideo-box-text {
-    max-width: 233px;
+    max-width: 60%;
     margin-left: 23px;
     font-weight: 300;
     color: #2B2B2B;
@@ -1529,10 +1546,6 @@ a {
 
 
 
-.process-cont {
-    max-width: 1180px;
-    margin: 0 auto 100px auto;
-}
 .process-up {
     display: flex;
     justify-content: space-between;
@@ -1571,13 +1584,15 @@ a {
 
 
 .imp-img-cont {
-    max-width: 1180px;
-    height: 425px;
     margin: 90px auto 120px auto;
 }
 .imp-img-link {
     width: 100%;
     height: 100%;
+    display: block;
+}
+.imp-img-link img{
+    max-width: 100%;
 }
 
 
@@ -1586,8 +1601,6 @@ a {
     position: relative;
     width: 350px;
     height: 460px;
-    /* display: grid;
-    grid-template: 47px 75px repeat(3, 1fr) 185px / 142px 150px; */
     background-size: 270px 375px;
     background-image: url(../img/teeth.png) ;
     background-repeat: no-repeat;
@@ -1614,8 +1627,8 @@ a {
     margin-bottom: 14px;
 }
 .slide-link{
-    width: 177px;
-    height: 38px;
+    max-width: 180px;
+    padding: 12px 28px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1626,25 +1639,22 @@ a {
     border-radius: 2px;
     background: linear-gradient(89.84deg, #FDCC8A 0.12%, #FDCC8A 99.86%);
 }
-.slide-link_bgb{
+.doctors-slider-slide_sec:nth-child(3n+2) .slide-link{
     background: linear-gradient(89.84deg, #80B3FF 0.12%, #80B3FF 99.86%);
 }
-.slide-link_bgp{
-    background: linear-gradient(89.84deg, #FDCEB8 0.12%, #FDCEB8 99.86%);
-}
+.doctors-slider-slide_sec:nth-child(3n+3) .slide-link{
+    background: linear-gradient(89.84deg, #FDCEB8 0.12%, #FDCEB8 99.86%);}
 
 
 
 .price-slider {
     max-width: 1180px;
-    height: 750px;
     margin: 0 auto 100px auto;
     overflow: hidden;
     position: relative;
 }
 .price-slider-wrapper {
     display: flex;
-    height: 750px;
     min-width: 0;
     margin: 0 auto 100px auto;
 }
@@ -1652,22 +1662,41 @@ a {
     margin-top: 20px;
     position: relative;
     max-width: 380px;
-    height: 691px;
     text-align: center;
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price-slider-slide:nth-child(3n+1) .country_kid{
+    background: #DC76EB;
+}
+.price-slider-slide:nth-child(3n+2) .country_kid{
+    background: #FF095C;
+}
+.price-slider-slide:nth-child(3n+3) .country_kid{
+    background: #2BA2EE;
+}
+.price-slider-slide:nth-child(3n+1) .guarantee_kid{
+    background: #F8C6FF;
+}
+.price-slider-slide:nth-child(3n+2) .guarantee_kid{
+    background: #FFA8C6;
+}
+.price-slider-slide:nth-child(3n+3) .guarantee_kid{
+    background: #83CFFF;
 }
 .country {
     position: absolute;
-    width: 123px;
-    height: 23px;
-    left: 118px;
+    padding: 2px 29px;
     top: -17px;
     background: #FFE690;
     border-radius: 2px;
     font-weight: 400;
     color: #FFFFFF;
+
 }
 .price-slide-textarea{
     max-width: 320px;
@@ -1791,7 +1820,6 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 668px;
 }
 .about-kid{
     margin: 0;
@@ -1820,7 +1848,6 @@ a {
     display:flex;
     justify-content: space-between;
     margin-top: 80px;
-    height: 100px;
 }
 .kid-box{
     max-width: 400px;
@@ -1828,8 +1855,10 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 0 5px;
 }
 .kid-links_link{
+    margin-bottom: 20px;
     font-weight: 300;
     color: #5F5F5F;
     text-decoration: underline;
@@ -1845,7 +1874,32 @@ a {
 }
 .numbers-content {
     position: relative;
-    width: 100%;
+    max-width: 280px;
+    padding: 5px;
+}
+.numbers-content:nth-child(1) .numbers-header{
+    background: linear-gradient(180deg, #FFEAB5 0%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.numbers-content:nth-child(2) .numbers-header{
+    background: linear-gradient(180deg, #EFC7FF 0%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.numbers-content:nth-child(3) .numbers-header{
+    background: linear-gradient(180deg, #FFB1BF 0%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.numbers-content:nth-child(4) .numbers-header{
+    background: linear-gradient(180deg, #ADF3EE 0%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .numbers-header {
     position: absolute;
@@ -1855,30 +1909,6 @@ a {
     font-size: 100px;
     line-height: 117px;
     top: -70px;
-}
-.numbers1{
-    background: linear-gradient(180deg, #FFEAB5 0%, #FFFFFF 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.numbers2{
-    background: linear-gradient(180deg, #EFC7FF 0%, #FFFFFF 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.numbers3{
-    background: linear-gradient(180deg, #FFB1BF 0%, #FFFFFF 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.numbers4{
-    background: linear-gradient(180deg, #ADF3EE 0%, #FFFFFF 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 .numbers-text {
     position: relative;
@@ -1898,6 +1928,11 @@ a {
     font-size: 24px;
     line-height: 28px;
 }
+.boy_header_sec{
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 0;
+}
 
 
 .boy_little-cont{
@@ -1909,24 +1944,7 @@ a {
 }
 
 
-.country_pink{
-    background: #DC76EB;
-}
-.country_red{
-    background: #FF095C;
-}
-.country_blue{
-    background: #2BA2EE;
-}
-.guarantee_pink{
-    background: #F8C6FF;
-}
-.guarantee_red{
-    background: #FFA8C6;
-}
-.guarantee_blue{
-    background: #83CFFF;
-}
+
 
 
 .implant{
@@ -1947,22 +1965,21 @@ a {
 .implant-box{
     display: flex;
     flex-direction: column;
-    /* height: 253px; */
     max-width: 280px;
+    padding: 0 5px;
 }
 
 
 .stages {
     display: flex;
+    margin: 80px auto 100px auto;
     justify-content: space-between;
-    margin-top: 80px;
-    margin-bottom: 100px;
 }
 .stages-box {
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
     max-width: 345px;
+    padding: 0 5px;
 }
 .circle{
     width: 65px;
@@ -1981,8 +1998,8 @@ a {
     line-height: 33px;
     color: #96DBFF;
     background: #FFFFFF;
-    width: 60px;
-    height: 60px;
+    width: 59px;
+    height: 59px;
     border-radius: 50%;
 }
 .stages-box_header {
@@ -2016,21 +2033,18 @@ a {
 
 
 .construct-header-border{
-    width: 464px;
+    width: 80%;
     height: 2px;
     background: linear-gradient(90deg, #E8F7FF 0%, #20B3FF 100%);
     margin-bottom: 36px;
 }
 .construct{
-    max-width: 1440px;
-    height: 620px;
-    margin: auto;
+    margin-bottom: 60px;
     background: linear-gradient(269.47deg, #C0F7F3 0.41%, #F2FFFF 99.54%);
 }
 .construct-text-content{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     height: 100%;
 }
 .construct-cont{
@@ -2045,7 +2059,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 10px 0;
+    margin-top: 0;
+    margin-bottom: 100px;
 }
 .construct-header{
     margin-bottom: 20px;
