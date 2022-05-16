@@ -15,6 +15,23 @@ jQuery(document).ready(function ($) {
     });
 });
 
+jQuery(document).ready(function ($) {
+  $(".title").click(function (j) {
+      var droDown = $(this).closest(".item").find(".panel");
+      $(this).closest(".acc").find(".panel").not(droDown).slideUp();
+
+      if ($(this).hasClass("active")) {
+          $(this).removeClass("active");
+      } else {
+          $(this).closest(".acc").find(".title.active").removeClass("active");
+          $(this).addClass("active");
+      }
+
+      droDown.stop(false, true).slideToggle();
+      j.preventDefault();
+  });
+});
+
 
 function openCity(evt, cityName) {
     let i, tabcontent, tablinks;

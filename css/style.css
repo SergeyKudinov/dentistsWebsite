@@ -515,6 +515,12 @@ a {
 .indent{
     margin-top: 100px;
 }
+.doctors_indent{
+    margin: 53px auto 48px auto;
+}
+.doctor_indent{
+    margin-top: 53px;
+}
 .price-implant{
     height: 56px;
     margin-bottom: 80px;
@@ -2284,7 +2290,7 @@ a {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(auto-fit, 300px);
     justify-content: space-between;
-    grid-gap: 100px;
+    grid-gap: 60px;
     margin-top: 80px;
 }
 .doctors-box {
@@ -2379,4 +2385,130 @@ a {
     width: 172px;
     height: 24px;
     margin: 116px 100px auto auto;
+}
+
+
+.doctor-main {
+    display: flex;
+    justify-content: space-between;
+}
+.left-side {
+    max-width: 480px;
+}
+.left-name {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    color: #2B2B2B;
+    margin-bottom: 32px;
+    margin-top: 48px;
+}
+.left-spec {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #575757;
+    margin-bottom: 32px;
+}
+.left-spec2{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2B2B2B;
+    margin-bottom: 50px;
+}
+.left-spec2 span {
+    font-weight: 500;
+}
+.right-side {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.doc-right-img {
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+.right-info {
+    position: relative;
+    padding: 28px 50px 16px 50px;
+    max-width: 580px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    margin-top: 300px;
+    margin-bottom: 100px;
+}
+.doc-quote {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #575757;
+}
+.doc-quote_line {
+    background: #FFE49B;
+    width: 60px;
+    height: 4px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.right-doc-name {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2B2B2B;
+}
+.right-doc-spec {
+    font-weight: 400;
+    color: #575757;
+}
+.yellow_quotes {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.edu{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: #2B2B2B;
+}
+
+.edu-main {
+
+}
+.edu-main_header {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #575757;
+}
+.edu-main_text {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 140%;
+    color: #2B2B2B;
+}
+.edu-main_text span{
+    font-weight: 400;
+}
+.edu-extra {
+}
+.edu-extra_header {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #575757;
+}
+.edu-extra_text {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 140%;
+    color: #2B2B2B;
+}
+.edu-extra_text span{
+    font-weight: 400;
 }
