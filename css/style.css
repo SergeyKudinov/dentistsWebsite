@@ -548,6 +548,7 @@ a {
 }
 .patients-slider-slide img{
     max-width: 50%;
+    margin-right: 2px;
 }
 .patients-slider-pagination.swiper-pagination {
     position: absolute;
@@ -650,7 +651,7 @@ a {
 }
 .otherCities-box {
     width: 233px;
-    height: 120px;
+    /* height: 120px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -913,7 +914,7 @@ a {
 }
 .review-slider-slide {
     width: 300px;
-    height: 505px;
+    /* height: 505px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1108,7 +1109,7 @@ a {
     border: 1px solid #2B2B2B;
     border-radius: 2px;
     margin-top: 56px;
-    margin-bottom: 56px;
+    margin-bottom: 74px;
     padding-top: 9px;
     padding-bottom: 11px;
     max-width: 230px;
@@ -1336,6 +1337,10 @@ a {
     position: relative;
     background: radial-gradient(74.97% 394.15% at 74.97% 43.07%, #ADF3EE 0%, #F3FFFE 100%);
 }
+.banner_orto{
+    background: linear-gradient(269.47deg, #C0F7F3 0.41%, #F2FFFF 99.54%);
+    position: relative;
+}
 .consult{
     position: relative;
     display: flex;
@@ -1392,7 +1397,7 @@ a {
 }
 .otherCities-box {
     max-width: 233px;
-    height: 120px;
+    /* height: 120px; */
     padding: 0 5px;
 }
 .otherCities-header {
@@ -1765,7 +1770,7 @@ a {
 }
 
 .review-slider-slide_sec{
-    height: 240px;
+    /* height: 240px; */
 }
 
 
@@ -1978,13 +1983,14 @@ a {
 
 .stages {
     display: flex;
-    margin: 80px auto 100px auto;
+    margin: 80px auto 50px auto;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .stages-box {
     display: flex;
     flex-direction: column;
-    max-width: 345px;
+    max-width: 355px;
     padding: 0 5px;
 }
 .circle{
@@ -2021,16 +2027,43 @@ a {
     font-size: 16px;
     line-height: 130%;
     color: #2B2B2B;
+    margin-bottom: 60px;
 }
 .stage_number1{
     background-image: linear-gradient(26deg, #D7F1FF 50%, transparent 50%),
-    linear-gradient(90deg, #D7F1FF 50%, #20B3FF 50%);
+    linear-gradient(90deg, #D7F1FF 50%, #20B3FF 50%) !important;
 }
 .stage_number2{
     background-image: linear-gradient(90deg, transparent 50%, #20B3FF 50%), 
-    linear-gradient(135deg, #D7F1FF 50%, #20B3FF 50%);
+    linear-gradient(135deg, #D7F1FF 50%, #20B3FF 50%) !important;
 }
 .stage_number3{
+    background-image: linear-gradient(90deg, transparent 50%, #20B3FF 50%),
+    linear-gradient(270deg, #D7F1FF 50%, #20B3FF 50%) !important;
+}
+
+
+.stages:nth-child(1) .circle{
+    background-image: linear-gradient(331deg, #D7F1FF 50%, transparent 50%),
+    linear-gradient(90deg, #D7F1FF 50%, #20B3FF 50%);
+}
+.stages:nth-child(2) .circle{
+    background-image: linear-gradient(45deg, transparent 50%, #20B3FF 50%), 
+    linear-gradient(90deg, #D7F1FF 50%, #20B3FF 50%);
+}
+.stages:nth-child(3) .circle{
+    background-image: linear-gradient(90deg, transparent 50%, #20B3FF 50%),
+    linear-gradient(270deg, #D7F1FF 50%, #20B3FF 50%);
+}
+.stages:nth-child(4) .circle{
+    background-image: linear-gradient(90deg, transparent 50%, #20B3FF 50%),
+    linear-gradient(270deg, #D7F1FF 50%, #20B3FF 50%);
+}
+.stages:nth-child(5) .circle{
+    background-image: linear-gradient(90deg, transparent 50%, #20B3FF 50%),
+    linear-gradient(270deg, #D7F1FF 50%, #20B3FF 50%);
+}
+.stages:nth-child(6) .circle{
     background-image: linear-gradient(90deg, transparent 50%, #20B3FF 50%),
     linear-gradient(270deg, #D7F1FF 50%, #20B3FF 50%);
 }
@@ -2045,6 +2078,7 @@ a {
     margin-bottom: 36px;
 }
 .construct{
+    margin-top: 40px;
     margin-bottom: 60px;
     background: linear-gradient(269.47deg, #C0F7F3 0.41%, #F2FFFF 99.54%);
 }
@@ -2532,7 +2566,16 @@ a {
 .cert-slider-button-prev, .cert-slider-button-next{
     color: #2B2B2B;
 }
-
+.orto-text{
+    max-width: 580px;
+}
+.banner_orto img{
+    max-height: 598px;
+    max-width: 630px;
+}
+.orto-box{
+    max-width: 280px;
+}
 
 
 
