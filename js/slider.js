@@ -71,3 +71,12 @@ const priceSlider = new Swiper('.price-slider', {
   },
   grabCursor: true,
 });
+const certSlider = new Swiper('.cert-slider', {
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.cert-slider-button-next',
+    prevEl: '.cert-slider-button-prev',
+  },
+  slidesPerView: 4,
+  grabCursor: true,
+});

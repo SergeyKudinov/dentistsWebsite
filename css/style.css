@@ -1049,10 +1049,10 @@ a {
 }
 .pros-link_img, .pros-link_img img{
     max-width: 290px;
-    max-height: 226px;
+    max-height: 245px;
 }
 .pros-link_img{
-    margin: 17px 39px auto 8px;
+    margin: auto 39px 0px 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2470,45 +2470,69 @@ a {
     right: 20px;
     bottom: 20px;
 }
-.edu{
+.edu_title{
     font-weight: 400;
     font-size: 28px;
     line-height: 33px;
     color: #2B2B2B;
 }
 
-.edu-main {
+.education{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+.edu {
+    max-width: 580px;
+    width: 100%;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+}
+.edu-header {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #575757;
+}
+.edu-text {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 140%;
+    color: #2B2B2B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.course span{
+    font-weight: 400;
+}
+.course{
+    margin-top: 28px;
+}
 
+
+.cert-slider {
+    margin: 70px auto 100px auto;
+    overflow: hidden;
+    height: 240px;
+    max-width: 1040px;
+    position: relative;
 }
-.edu-main_header {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    color: #575757;
+.cert-slider-wrapper {
+    position: relative;
 }
-.edu-main_text {
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 140%;
+.cert-slider-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cert-slider-button-prev, .cert-slider-button-next{
     color: #2B2B2B;
 }
-.edu-main_text span{
-    font-weight: 400;
-}
-.edu-extra {
-}
-.edu-extra_header {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    color: #575757;
-}
-.edu-extra_text {
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 140%;
-    color: #2B2B2B;
-}
-.edu-extra_text span{
-    font-weight: 400;
-}
+
+
+
+
