@@ -1,12 +1,12 @@
 jQuery(document).ready(function ($) {
-    $(".faq-acc__title").click(function (j) {
-        var dropDown = $(this).closest(".faq-acc__item").find(".faq-acc__panel");
-        $(this).closest(".faq-acc").find(".faq-acc__panel").not(dropDown).slideUp();
+    $(".accordion-item_trigger").click(function (j) {
+        var dropDown = $(this).closest(".accordion_item").find(".accordion-item_content");
+        $(this).closest(".accordion").find(".accordion-item_content").not(dropDown).slideUp();
 
         if ($(this).hasClass("active")) {
             $(this).removeClass("active");
         } else {
-            $(this).closest(".faq-acc").find(".faq-acc__title.active").removeClass("active");
+            $(this).closest(".accordion").find(".accordion-item_trigger.active").removeClass("active");
             $(this).addClass("active");
         }
 
@@ -16,21 +16,25 @@ jQuery(document).ready(function ($) {
 });
 
 jQuery(document).ready(function ($) {
-  $(".title").click(function (j) {
-      var droDown = $(this).closest(".item").find(".panel");
-      $(this).closest(".acc").find(".panel").not(droDown).slideUp();
+    $(".accor_inner-item_trigger").click(function (j) {
+        var droDown = $(this).closest(".accor_inner_item").find(".accor_inner-item_content");
+        $(this).closest(".accordion-item_content").find(".accor_inner-item_content").not(droDown).slideUp();
 
-      if ($(this).hasClass("active")) {
-          $(this).removeClass("active");
-      } else {
-          $(this).closest(".acc").find(".title.active").removeClass("active");
-          $(this).addClass("active");
-      }
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+        } else {
+            $(this).closest(".accordion-item_content").find(".accor_inner-item_trigger.active").removeClass("active");
+            $(this).addClass("active");
+        }
 
-      droDown.stop(false, true).slideToggle();
-      j.preventDefault();
-  });
+        droDown.stop(false, true).slideToggle();
+        j.preventDefault();
+    });
 });
+
+
+
+
 
 
 function openCity(evt, cityName) {
