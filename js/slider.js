@@ -7,7 +7,6 @@ const swiper = new Swiper('.first-slider', {
       clickable: true,
     },
     grabCursor: true,
-    
   });
 
 const patientsSwiper = new Swiper('.patients-slider', {
@@ -45,6 +44,7 @@ const prosSlider = new Swiper('.pros-slider', {
 const reviewSlider = new Swiper('.review-slider', {
   slidesPerView: 3,
   spaceBetween: 60,
+  grabCursor: true,
   navigation: {
     nextEl: '.review-slider-button-next',
     prevEl: '.review-slider-button-prev',

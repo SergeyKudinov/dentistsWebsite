@@ -32,6 +32,40 @@ jQuery(document).ready(function ($) {
     });
 });
 
+jQuery(document).ready(function ($) {
+    $(".doc-drop-box").click(function (j) {
+        var droppDown = $(this).closest(".doc-accor-item").find(".doc-drop-content");
+        $(this).closest(".doc-drop_content").find(".doc-drop-content").not(droppDown).slideUp();
+
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+        } else {
+            $(this).closest(".doc-drop_content").find(".doc-drop-box.active").removeClass("active");
+            $(this).addClass("active");
+        }
+
+        droppDown.stop(false, true).slideToggle();
+        j.preventDefault();
+    });
+});
+
+
+
+
+
+
+const dropBox = document.querySelectorAll(".doc-accor-item");
+
+dropBox.forEach(item => {
+    item.addEventListener('click', () => {
+        if(item.classList.contains('doc_active')) {
+            item.classList.remove('doc_active')
+        } else {
+            item.classList.add('doc_active')
+        }
+    })
+})
+
 
 
 
