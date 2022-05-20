@@ -2,18 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-span{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-}
-.text{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
 }
+/* span{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+} */
 .container{
     max-width: 1200px;
     margin-left: auto;
@@ -63,12 +64,17 @@ a {
     font-weight: 300;
 }
 .nav-box{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     background: none;
     border: none;
     padding: 0 5px;
+}
+.nav-box div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -98,21 +104,30 @@ a {
 
 .doc-drop:hover .doc-drop_content{
     display: flex;
+    /* max-height: 645px;
+    width: 100%;
+    max-width: 920px;
+    padding: 29px 20px 48px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all 1s; */
 }
 .doc-drop_content {
     display: none;
+    /* width: 0px;
+    height: 0px; */
     flex-direction: column;
     flex-wrap: wrap;
     max-height: 645px;
     width: 100%;
     max-width: 920px;
     padding: 29px 20px 48px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     position: absolute;
     z-index: 20;
     background: #FFFFFF;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
     transform: translate(-20%);
+    transition: all 1s;
 }
 .doc-drop-box {
     margin-bottom: 20px;
@@ -409,7 +424,9 @@ a {
 
 
 
-
+.hidden{
+    display: none !important;
+}
 
 
 
@@ -422,7 +439,7 @@ a {
     /* max-width: 1180px; */
     height: 73px;
     display: grid;
-    grid-template-columns: 61.03% 6.35% 32.62%;
+    /* grid-template-columns: 61.03% 6.35% 32.62%; */
     align-items: center;
 }
 .nav-left-content{
@@ -451,15 +468,15 @@ a {
     border: 1px solid #2B2B2B;
     border-radius: 2px;
     padding: 6px;
+    transition: all 0.5s ease-in-out;
 }
 .feedback a{
     height: 100%;
-
 }
 .feedback:hover{
     background: url("../img/feedback_hover.png") no-repeat;
-    background-size: 100% 99%;
-    border: 1px solid white;
+    background-size: 100% 100%;
+    border: 1px solid skyblue;
 }
 .youtube_img{
     width: 24px;
@@ -711,7 +728,7 @@ a {
 .doctors-slider-slide {
     max-width: 300px;
     height: 375px;
-    background-size: 270px 375px;
+    background-size: 100% 100%;
     background-image: url(../img/teeth.png);
     background-repeat: no-repeat;
     position: relative;
@@ -973,9 +990,6 @@ a {
     left: 65px;
     width: 420px;
     height: 270px;
-    background-image: url(../img/bg-video.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
 .about-clinic_video video{
     position: absolute;
@@ -983,7 +997,11 @@ a {
     top: 0px;
     left: 0px;
 }
+.about-clinic_video video[poster]{
+    object-fit: fill;
+}
 .about-clinic_play {
+    display: block;
     position: relative;
     z-index: 3;
     width: 94px;
@@ -1031,6 +1049,7 @@ a {
 .review-slider-wrapper .review-slider-slide:nth-child(odd)
 .review-slide_video{
     order: -1;
+    margin-bottom: 10px;
 }
 .review-slider-wrapper .review-slider-slide:nth-child(even)
 .review-slide_video{
@@ -1074,7 +1093,7 @@ a {
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.review-slide_video1{
+/* .review-slide_video1{
     background-image: url(../img/review_pic1.png);
 }
 .review-slide_video2{
@@ -1082,7 +1101,7 @@ a {
 }
 .review-slide_video3{
     background-image: url(../img/review_pic3.png);
-}
+} */
 .review-slide_play {
     position: absolute;
     width: 79px;
@@ -1222,10 +1241,11 @@ a {
     padding-top: 9px;
     padding-bottom: 11px;
     max-width: 230px;
+    transition: all 0.5s ease-in-out;
 }
 .banner-link:hover{
     background: url("../img/feedback_hover.png") no-repeat;
-    background-size: 100% 99%;
+    background-size: 100% 100%;
     border: 1px solid skyblue;
 }
 
@@ -1782,7 +1802,12 @@ a {
     line-height: 14px;
     color: #FFFFFF;
     border-radius: 2px;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
     background: linear-gradient(89.84deg, #FDCC8A 0.12%, #FDCC8A 99.86%);
+}
+.slide-link:hover{
+    opacity: 0.7;
 }
 .doctors-slider-slide_sec:nth-child(3n+2) .slide-link{
     background: linear-gradient(89.84deg, #80B3FF 0.12%, #80B3FF 99.86%);
@@ -1844,14 +1869,20 @@ a {
 
 }
 .price-slide-textarea{
+    padding: 0 5px;
     max-width: 320px;
     max-height: 367px;
-    margin: 40px auto 60px auto;
-    height: 691px;
-    display: flex;
+    margin: 40px auto 40px auto;
+    height: 100%;
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; */
     text-align: center;
+}
+.price-slide-textarea li{
+    font-weight: 300;
+    color: #2B2B2B;
+    margin-bottom: 24px;
 }
 .price-slide-header {
     margin-top: 32px;
@@ -1871,11 +1902,14 @@ a {
 }
 .price-slide-price span{
     font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
 }
-.price-slide-text {
+/* .price-slide-text {
     font-weight: 300;
     color: #2B2B2B;
-}
+} */
 .guarantee {
     font-weight: 300;
     font-size: 20px;
@@ -1973,13 +2007,13 @@ a {
     border: 1px solid #2B2B2B;
 }
 
-.app-link:hover{
+/* .app-link:hover{
     background: url("../img/feedback_hover.png") no-repeat;
     background-size: 100%;
     border: none;
     right: -2px;
     top: -2px;
-}
+} */
 
 
 .kid-links {
@@ -2070,6 +2104,7 @@ a {
     font-size: 24px;
     line-height: 28px;
     margin-bottom: 0;
+    margin-right: 10px;
 }
 
 

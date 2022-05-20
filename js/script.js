@@ -34,6 +34,9 @@ jQuery(document).ready(function ($) {
 
 jQuery(document).ready(function ($) {
     $(".doc-drop-box").click(function (j) {
+
+        /* let dropBox = $(this).closest(".doc-accor-item").find(".doc-accor-item"); */
+
         var droppDown = $(this).closest(".doc-accor-item").find(".doc-drop-content");
         $(this).closest(".doc-drop_content").find(".doc-drop-content").not(droppDown).slideUp();
 
@@ -54,17 +57,13 @@ jQuery(document).ready(function ($) {
 
 
 
-const dropBox = document.querySelectorAll(".doc-accor-item");
+const dropItem = document.querySelectorAll(".doc-accor-item");
 
-dropBox.forEach(item => {
+dropItem.forEach(item => {
     item.addEventListener('click', () => {
-        if(item.classList.contains('doc_active')) {
-            item.classList.remove('doc_active')
-        } else {
-            item.classList.add('doc_active')
-        }
+        item.classList.toggle('doc_active');
     })
-})
+});
 
 
 
@@ -73,19 +72,59 @@ dropBox.forEach(item => {
 
 function openCity(evt, cityName) {
     let i, tabcontent, tablinks;
-    // Получить все элементы с class="tabcontent" и скрыть их
-    tabcontent = document.getElementsByClassName("tabcontent");
+        tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
-  
-    // Получить все элементы с class="tablinks" и снять класс "active"
-    tablinks = document.getElementsByClassName("tablinks");
+        tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-  
-    // Показать на текущей вкладке, и добавить класс "active" по ссылке, которая откроется вкладка
-    document.getElementById(cityName).style.display = "flex";
-    evt.currentTarget.className += " active";
+        document.getElementById(cityName).style.display = "flex";
+        evt.currentTarget.className += " active";
   }
+
+
+
+let videoEl = document.getElementById('video1'),
+    playBtn = document.getElementById('play1');
+
+    playBtn.addEventListener('click', function () {
+        if (videoEl.paused) {
+            videoEl.play();
+        } else {
+            videoEl.pause();
+        }
+    }, false);
+    videoEl.addEventListener('play', function () {
+        
+         playBtn.classList.add('hidden');
+    }, false);
+     
+videoEl.addEventListener('pause', function () {
+ 
+    playBtn.classList.remove('hidden');
+}, false);
+
+
+
+
+/* let videoEl2 = document.getElementById('video1'),
+    playBtn2 = document.getElementById('play1');
+
+    playBtn.addEventListener('click', function () {
+    if (videoEl.paused) {
+        videoEl.play();
+    } else {
+        videoEl.pause();
+    }
+}, false);
+videoEl.addEventListener('play', function () {
+     
+    playBtn.classList.add('hidden');
+}, false);
+ 
+videoEl.addEventListener('pause', function () {
+ 
+    playBtn.classList.remove('hidden');
+}, false); */
