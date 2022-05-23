@@ -10,7 +10,7 @@ const swiper = new Swiper('.first-slider', {
   });
 
 const patientsSwiper = new Swiper('.patients-slider', {
-  slidesPerView: 2,
+  slidesPerView: 3,
   initialSlide: 0,
   spaceBetween: 20,
   pagination: {
@@ -18,12 +18,14 @@ const patientsSwiper = new Swiper('.patients-slider', {
     type: 'bullets',
     clickable: true,
   },
+  allowTouchMove: false,
   grabCursor: true,
   navigation: {
     nextEl: '.patients-button-next',
     prevEl: '.patients-button-prev',
   },
 });
+
 const doctorsSlider = new Swiper('.doctors-slider', {
   spaceBetween: 60,
   slidesPerView: 3,
@@ -77,6 +79,6 @@ const certSlider = new Swiper('.cert-slider', {
     nextEl: '.cert-slider-button-next',
     prevEl: '.cert-slider-button-prev',
   },
-  slidesPerView: 4,
+  slidesPerView: 2,
   grabCursor: true,
 });

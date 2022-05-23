@@ -8,18 +8,12 @@
     line-height: 19px;
     color: #000000;
 }
-/* span{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
-} */
 .container{
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding: 0px 10px;
+    position: relative;
 }
 .header {
     max-width: 1180px;
@@ -104,29 +98,20 @@ a {
 
 .doc-drop:hover .doc-drop_content{
     display: flex;
-    /* max-height: 645px;
-    width: 100%;
-    max-width: 920px;
-    padding: 29px 20px 48px 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    transition: all 1s; */
 }
 .doc-drop_content {
     display: none;
-    /* width: 0px;
-    height: 0px; */
     flex-direction: column;
-    flex-wrap: wrap;
-    max-height: 645px;
-    width: 100%;
-    max-width: 920px;
+    /* flex-wrap: wrap; */
+    max-height: 532px;
+    max-width: 350px;
     padding: 29px 20px 48px 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     position: absolute;
     z-index: 20;
     background: #FFFFFF;
     border-radius: 2px;
-    transform: translate(-20%);
+    /* transform: translate(-20%); */
     transition: all 1s;
 }
 .doc-drop-box {
@@ -158,8 +143,8 @@ a {
     width: 100%;
 }
 .doc-drop-box img{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin: 0px 16px 12px 0px;
 }
 
@@ -656,7 +641,7 @@ a {
 }
 
 
-.patients-slider {
+/* .patients-slider {
     margin: 100px auto 120px auto;
     max-width: 1160px;
     height: 271px;
@@ -665,6 +650,7 @@ a {
 }
 .patients-slider-slide {
     max-width: 50%;
+    height: 250px;
     height: 222px;
     display: flex;
 }
@@ -675,6 +661,85 @@ a {
 .patients-slider-pagination.swiper-pagination {
     position: absolute;
     width: 98px;
+    height: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 87%;
+}
+.patients-slider-pagination .swiper-pagination-bullet-active{
+    width: 40px !important;
+    height: 12px;
+    background: #7E7E7E;
+    border-radius: 30px;
+}
+.patients-slider-pagination .swiper-pagination-bullet,
+.patients-slider-pagination .swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+}
+.patients-nav-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100px;
+    height: 14px;
+    right: 50%;
+    top: 36%;
+    transform: translate(50%, 50%);
+    z-index: 2;
+}
+.patients-button-prev::after, .patients-button-next::after {
+    color: #FFFF;
+    width: 7px;
+    height: 14px;
+    font-size: 20px !important;
+} */
+
+
+.patients-slider {
+    margin: 100px auto 120px auto;
+    max-width: 1160px;
+    /* height: 271px; */
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+}
+.patients-slider-slide {
+    height: 250px;
+    display: flex;
+    position: relative;
+}
+.img-comp-img{
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+.img-comp-slider {
+    position: absolute;
+    z-index:9;
+    cursor: ew-resize;
+    /*установите внешний вид ползунка:*/
+    width: 50px;
+    height: 50px;
+    /* width: 34px;
+    height: 14px; */
+    background-color: #FFFFFF;
+    opacity: 0.5;
+    border-radius: 50%;
+}
+.img-comp-img img{
+    margin-right: 2px;
+    height: 250px !important;
+    max-width: 380px !important;
+    display: block;
+    vertical-align: middle;
+}
+.patients-slider-pagination.swiper-pagination {
+    position: absolute;
+    width: 100px;
     height: 14px;
     display: flex;
     justify-content: space-between;
@@ -1181,7 +1246,8 @@ a {
     max-height: 245px;
 }
 .pros-link_img{
-    margin: auto 39px 0px 8px;
+    /* margin: auto 39px 0px 8px; */
+    margin-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2165,6 +2231,12 @@ a {
     border-radius: 2px;
     display: flex;
     position: relative;
+    max-height: 238px;
+    margin-bottom: 90px;
+}
+.stages-box_big circle {
+    background-image: linear-gradient(45deg, transparent 75%, #20B3FF 75%), 
+    linear-gradient(125deg, #D7F1FF 75%, #20B3FF 75%);
 }
 .stages-box_big img{
     position: absolute;
@@ -2619,7 +2691,7 @@ a {
 
 .our_doctors {
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(auto-fit, 300px);
+    grid-template: repeat(2, 1fr) / repeat(auto-fit, 300px);
     justify-content: space-between;
     grid-gap: 60px;
     margin-top: 80px;
@@ -2858,7 +2930,7 @@ a {
 .cert-slider-slide {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 .cert-slider-button-prev, .cert-slider-button-next{
     color: #2B2B2B;
