@@ -57,77 +57,31 @@ jQuery(document).ready(function ($) {
 
 
 
-/* const dropItem = document.querySelectorAll(".doc-accor-item");
-
-dropItem.forEach(item => {
-    item.addEventListener('click', () => {
-        item.classList.toggle('doc_active');
-    })
-}); */
+// class "doc_z" for start doctors-slider video
 
 
 
+// allon4 accordeon
 
+jQuery(document).ready(function ($) {
+  $(".faq-acc__title").click(function (j) {
+    var dropDown = $(this).closest(".faq-acc__item").find(".faq-acc__panel");
+    $(this).closest(".faq-acc").find(".faq-acc__panel").not(dropDown).slideUp();
 
-
-function openCity(evt, cityName) {
-    let i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-        tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-        document.getElementById(cityName).style.display = "flex";
-        evt.currentTarget.className += " active";
-  }
-
-
-
-let videoEl = document.getElementById('video1'),
-    playBtn = document.getElementById('play1');
-
-    playBtn.addEventListener('click', function () {
-        if (videoEl.paused) {
-            videoEl.play();
-        } else {
-            videoEl.pause();
-        }
-    }, false);
-    videoEl.addEventListener('play', function () {
-        
-         playBtn.classList.add('hidden');
-    }, false);
-     
-videoEl.addEventListener('pause', function () {
- 
-    playBtn.classList.remove('hidden');
-}, false);
-
-
-
-
-/* let videoEl2 = document.getElementById('video1'),
-    playBtn2 = document.getElementById('play1');
-
-    playBtn.addEventListener('click', function () {
-    if (videoEl.paused) {
-        videoEl.play();
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
     } else {
-        videoEl.pause();
+      $(this).closest(".faq-acc").find(".faq-acc__title.active").removeClass("active");
+      $(this).addClass("active");
     }
-}, false);
-videoEl.addEventListener('play', function () {
-     
-    playBtn.classList.add('hidden');
-}, false);
- 
-videoEl.addEventListener('pause', function () {
- 
-    playBtn.classList.remove('hidden');
-}, false); */
+
+    dropDown.stop(false, true).slideToggle();
+    j.preventDefault();
+  });
+});
+
+
+
 
 
 
@@ -210,3 +164,40 @@ function initComparisons() {
     }
   }
 
+
+
+  function openCity(evt, cityName) {
+    let i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+        tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+        document.getElementById(cityName).style.display = "flex";
+        evt.currentTarget.className += " active";
+  }
+
+
+
+let videoEl = document.getElementById('video1'),
+    playBtn = document.getElementById('play1');
+
+    playBtn.addEventListener('click', function () {
+        if (videoEl.paused) {
+            videoEl.play();
+        } else {
+            videoEl.pause();
+        }
+    }, false);
+    videoEl.addEventListener('play', function () {
+        
+         playBtn.classList.add('hidden');
+    }, false);
+     
+videoEl.addEventListener('pause', function () {
+ 
+    playBtn.classList.remove('hidden');
+}, false);
